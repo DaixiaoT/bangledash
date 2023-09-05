@@ -1,0 +1,2808 @@
+<cmdl project="Bangladesh_hvac" protocol="">
+
+    <state_page get_len="820" set_len="820">
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 0 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="650 20 387 36" align="left" text="B3.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="1600 15 678 117" align="left" text="B2.bmp" />
+		</field>
+			
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 60 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="780 75 173 35" align="left" text="B1.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="780 860 173 35" align="left" text="B5.bmp" />
+		</field>
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="830 1217 173 35" align="left" text="B8.bmp" />
+		</field>
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="850 1820 173 35" align="left" text="B7.bmp" />
+		</field>
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="850 2400 173 35" align="left" text="B11.bmp" />
+		</field>
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="830 3225 173 35" align="left" text="B9.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="830 3700 173 35" align="left" text="B10.bmp" />
+		</field>
+	
+        <frame rect="20 115 850 505"  text="XJ3_DI" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 15 720 22" align="left" text="1@D1-HVAC 1 Compressor 1 contactor K1 feedback " />
+                <ack rect="745 15 30 22" align="left" pos="5.0" />
+                <set rect="780 15 60 22" align="left" text="LOCK" pos="5.0" valid="21.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 40 720 22" align="left" text="2@D2-HVAC 1 Compressor 2 contactor K2 feedback" />
+                <ack rect="745 40 30 22" align="left" pos="5.1" />
+                <set rect="780 40 60 22" align="left" text="LOCK" pos="5.1" valid="21.1" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 65 720 22" align="left" text="3@D3-HVAC 1 Supply air fan normal contactor K5 feedback" />
+                <ack rect="745 65 30 22" align="left" pos="5.2" />
+                <set rect="780 65 60 22" align="left" text="LOCK" pos="5.2" valid="21.2" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 90 720 22" align="left" text="4@D4-HVAC 1 Condensor fan 1 contactor K6 feedback" />
+                <ack rect="745 90 30 22" align="left" pos="5.3" />
+                <set rect="780 90 60 22" align="left" text="LOCK" pos="5.3" valid="21.3" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 115 720 22" align="left" text="5@D5-HVAC 1 Condensor fan 2 contactor K7 feedback" />
+                <ack rect="745 115 30 22" align="left" pos="5.4" />
+                <set rect="780 115 60 22" align="left" text="LOCK" pos="5.4" valid="21.4" />
+            </field>
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 140 720 22" align="left" text="6@C1-HVAC 1 High pressure switch 1 feedback" />
+                <ack rect="745 140 30 22" align="left" pos="5.5" />
+                <set rect="780 140 60 22" align="left" text="LOCK" pos="5.5" valid="21.5" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 165 720 22" align="left" text="7@C2-HVAC 1 High pressure switch 2 feedback" />
+                <ack rect="745 165 30 22" align="left" pos="5.6" />
+                <set rect="780 165 60 22" align="left" text="LOCK" pos="5.6" valid="21.6" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 190 720 22" align="left" text="8@C3-HVAC 1 Low pressure switch 1 feedback" />
+                <ack rect="745 190 30 22" align="left" pos="5.7" />
+                <set rect="780 190 60 22" align="left" text="LOCK" pos="5.7" valid="21.7" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 215 720 22" align="left" text="9@C4-HVAC 1 Low pressure switch 2 feedback" />
+                <ack rect="745 215 30 22" align="left" pos="6.0" />
+                <set rect="780 215 60 22" align="left" text="LOCK" pos="6.0" valid="22.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 240 720 22" align="left" text="10@C5-HVAC 1 Supplier air fan thermal protection switch feedback" />
+                <ack rect="745 240 30 22" align="left" pos="6.1" />
+                <set rect="780 240 60 22" align="left" text="LOCK" pos="6.1" valid="22.1" />
+            </field>
+
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 265 720 22" align="left" text="11@B1-HVAC 1 Condenser fan 1 and 2 thermal protection switch feedback" />
+                <ack rect="745 265 30 22" align="left" pos="6.2" />
+                <set rect="780 265 60 22" align="left" text="LOCK" pos="6.2" valid="22.2" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 290 720 22" align="left" text="12@B2-HVAC 1 Supply air fan redundancy contactor K8 feedback" />
+                <ack rect="745 290 30 22" align="left" pos="6.3" />
+                <set rect="780 290 60 22" align="left" text="LOCK" pos="6.3" valid="22.3" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 315 720 22" align="left" text="13@B3-HVAC 2 Compressor 1 contactor K21 feedback" />
+                <ack rect="745 315 30 22" align="left" pos="6.4" />
+                <set rect="780 315 60 22" align="left" text="LOCK" pos="6.4" valid="22.4" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 340 720 22" align="left" text="14@B4-HVAC 2 Compressor 2 contactor K22 feedback" />
+                <ack rect="745 340 30 22" align="left" pos="6.5" />
+                <set rect="780 340 60 22" align="left" text="LOCK" pos="6.5" valid="22.5" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 365 720 22" align="left" text="15@B5-HVAC 2 Supply air fan normal contactor K5 feedback " />
+                <ack rect="745 365 30 22" align="left" pos="6.6" />
+                <set rect="780 365 60 22" align="left" text="LOCK" pos="6.6" valid="22.6" />
+            </field>
+
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 390 720 22" align="left" text="16@A1-HVAC 2 Condensor fan 1 contactor K26 feedback" />
+                <ack rect="745 390 30 22" align="left" pos="6.7" />
+                <set rect="780 390 60 22" align="left" text="LOCK" pos="6.7" valid="22.7" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 415 720 22" align="left" text="17@A2-HVAC 2 Condensor fan 2 contactor K27 feedback" />
+                <ack rect="745 415 30 22" align="left" pos="7.0" />
+                <set rect="780 415 60 22" align="left" text="LOCK" pos="7.0" valid="23.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 440 720 22" align="left" text="18@A3-HVAC 2 High pressure switch 1 feedback" />
+                <ack rect="745 440 30 22" align="left" pos="7.1" />
+                <set rect="780 440 60 22" align="left" text="LOCK" pos="7.1" valid="23.1" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 465 720 22" align="left" text="19@A4-HVAC 2 High pressure switch 2 feedback" />
+                <ack rect="745 465 30 22" align="left" pos="7.2" />
+                <set rect="780 465 60 22" align="left" text="LOCK" pos="7.2" valid="23.2" />
+            </field>
+
+        </frame>
+
+
+        <frame rect="880 115 850 505" text="XJ4_DI" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 15 720 22" align="left" text="20@D1-HVAC 2 Low pressure switch 1 feedback" />
+                <ack rect="745 15 30 22" align="left" pos="7.3" />
+                <set rect="780 15 60 22" align="left" text="LOCK" pos="7.3" valid="23.3" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 40 720 22" align="left" text="21@D2-HVAC 2 Low pressure switch 2 feedback" />
+                <ack rect="745 40 30 22" align="left" pos="7.4" />
+                <set rect="780 40 60 22" align="left" text="LOCK" pos="7.4" valid="23.4" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 65 720 22" align="left" text="22@D3-HVAC 2 Supplier air fan thermal protection switch feedback" />
+                <ack rect="745 65 30 22" align="left" pos="7.5" />
+                <set rect="780 65 60 22" align="left" text="LOCK" pos="7.5" valid="23.5" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 90 720 22" align="left" text="23@D4-HVAC 2 Condenser fan 1 and 2 thermal protection switch feedback" />
+                <ack rect="745 90 30 22" align="left" pos="7.6" />
+                <set rect="780 90 60 22" align="left" text="LOCK" pos="7.6" valid="23.6" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 115 720 22" align="left" text="24@D5-HVAC 2 Supply air fan redundancy contactor K8 feedback" />
+                <ack rect="745 115 30 22" align="left" pos="7.7" />
+                <set rect="780 115 60 22" align="left" text="LOCK" pos="7.7" valid="23.7" />
+            </field>
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 140 720 22" align="left" text="25@C1-1P Power detector feedback" />
+                <ack rect="745 140 30 22" align="left" pos="8.0" />
+                <set rect="780 140 60 22" align="left" text="LOCK" pos="8.0" valid="24.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 165 720 22" align="left" text="26@C2-3P Power detector feedback" />
+                <ack rect="745 165 30 22" align="left" pos="8.1" />
+                <set rect="780 165 60 22" align="left" text="LOCK" pos="8.1" valid="24.1" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 190 720 22" align="left" text="27@C3-Mode switch 1" />
+                <ack rect="745 190 30 22" align="left" pos="8.2" />
+                <set rect="780 190 60 22" align="left" text="LOCK" pos="8.2" valid="24.2" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 215 720 22" align="left" text="28@C4-Mode switch 2" />
+                <ack rect="745 215 30 22" align="left" pos="8.3" />
+                <set rect="780 215 60 22" align="left" text="LOCK" pos="8.3" valid="24.3" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 240 720 22" align="left" text="29@C5-Mode switch 3" />
+                <ack rect="745 240 30 22" align="left" pos="8.4" />
+                <set rect="780 240 60 22" align="left" text="LOCK" pos="8.4" valid="24.4" />
+            </field>
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 265 720 22" align="left" text="30@B1-HVAC1 Heater Contactor 1 feedback" />
+                <ack rect="745 265 30 22" align="left" pos="8.5" />
+                <set rect="780 265 60 22" align="left" text="LOCK" pos="8.5" valid="24.5" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 290 720 22" align="left" text="31@B2-HVAC1 Heater Contactor 2 feedback" />
+                <ack rect="745 290 30 22" align="left" pos="8.6" />
+                <set rect="780 290 60 22" align="left" text="LOCK" pos="8.6" valid="24.6" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 315 720 22" align="left" text="32@B3-HVAC1 Heater thermal protection" />
+                <ack rect="745 315 30 22" align="left" pos="8.7" />
+                <set rect="780 315 60 22" align="left" text="LOCK" pos="8.7" valid="24.7" />
+            </field>
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 340 720 22" align="left" text="33@B4-HVAC2 Heater Contactor 1 feedback" />
+                <ack rect="745 340 30 22" align="left" pos="9.0" />
+                <set rect="780 340 60 22" align="left" text="LOCK" pos="9.0" valid="25.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 365 720 22" align="left" text="34@B5-HVAC2 Heater Contactor 2 feedback" />
+                <ack rect="745 365 30 22" align="left" pos="9.1" />
+                <set rect="780 365 60 22" align="left" text="LOCK" pos="9.1" valid="25.1" />
+            </field>
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 390 720 22" align="left" text="35@A1-HVAC2 Heater thermal protection" />
+                <ack rect="745 390 30 22" align="left" pos="9.2" />
+                <set rect="780 390 60 22" align="left" text="LOCK" pos="9.2" valid="25.2" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 415 720 22" align="left" text="36@A2-HVAC1 Smoke sensor feedback" />
+                <ack rect="745 415 30 22" align="left" pos="9.3" />
+                <set rect="780 415 60 22" align="left" text="LOCK" pos="9.3" valid="25.3" />
+            </field>
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 440 720 22" align="left" text="37@A3-HVAC2 Smoke sensor feedback" />
+                <ack rect="745 440 30 22" align="left" pos="9.4" />
+                <set rect="780 440 60 22" align="left" text="LOCK" pos="9.4" valid="25.4" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 465 720 22" align="left" text="38@A4-Control panel Smoke sensor feedback" />
+                <ack rect="745 465 30 22" align="left" pos="9.5" />
+                <set rect="780 465 60 22" align="left" text="LOCK" pos="9.5" valid="25.5" />
+            </field>
+        </frame>
+
+
+        <frame rect="20 630 850 200" text="XJ5_DI" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 15 720 22" align="left" text="39@D1-HVAC 1 Pressure difference switch" />
+                <ack rect="745 15 30 22" align="left" pos="9.6" />
+                <set rect="780 15 60 22" align="left" text="LOCK" pos="9.6" valid="25.6" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 40 720 22" align="left" text="40@D2-HVAC 2 Pressure difference switch" />
+                <ack rect="745 40 30 22" align="left" pos="9.7" />
+                <set rect="780 40 60 22" align="left" text="LOCK" pos="9.7" valid="25.7" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 65 720 22" align="left" text="41@D3-HVAC 1 Inverter fault feedback" />
+                <ack rect="745 65 30 22" align="left" pos="10.0" />
+                <set rect="780 65 60 22" align="left" text="LOCK" pos="10.0" valid="26.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 90 720 22" align="left" text="42@D4-HVAC 2 Inverter fault feedback" />
+                <ack rect="745 90 30 22" align="left" pos="10.1" />
+                <set rect="780 90 60 22" align="left" text="LOCK" pos="10.1" valid="26.1" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 115 720 22" align="left" text="43@D5-Car definition2" />
+                <ack rect="745 115 30 22" align="left" pos="10.2" />
+                <set rect="780 115 60 22" align="left" text="LOCK" pos="10.2" valid="26.2" />
+            </field>
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 140 720 22" align="left" text="44@C1-Car definition3" />
+                <ack rect="745 140 30 22" align="left" pos="10.3" />
+                <set rect="780 140 60 22" align="left" text="LOCK" pos="10.3" valid="26.3" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 165 720 22" align="left" text="45@C2-Car definition4" />
+                <ack rect="745 165 30 22" align="left" pos="10.4" />
+                <set rect="780 165 60 22" align="left" text="LOCK" pos="10.4" valid="26.4" />
+            </field>
+        </frame>
+
+	<frame rect="20 1250 850 270" text="Status" color="#f0f0f0">
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 15 300 22" align="left" text="Setpoint temperature" />
+                <ack rect="320 15 60 22" align="left" pos="87" />
+               // <set rect="780 15 60 22" align="left" text="LOCK" pos="113" valid="130.0" />
+            </field>
+            //<field type="state" datatype="float16x10" color="#00f000">
+             //   <title rect="20 40 300 22" align="left" text="Setpoint Unit 2" />
+                //<ack rect="720 40 60 22" align="left" pos="89" />
+              //  <set rect="780 40 60 22" align="left" text="LOCK" pos="115" valid="130.1" />
+          //  </field>
+
+            <field type="state" datatype="list" listdata="NULL,Self test,Maint,Off,Diagnose,Ventilation,Full heating,Half heating,Full cooling,Half cooling,Auto heating,Auto cooling,Auto Ventilation">
+                <title rect="20 65 115 22" align="left" text="Mode Unit 1" />
+                <ack rect="140 65 200 22" align="left" pos="85" />
+            </field>
+            <field type="state" datatype="list" listdata="NULL,Self test,Maint,Off,Diagnose,Ventilation,Full heating,Half heating,Full cooling,Half cooling,Auto heating,Auto cooling,Auto Ventilation">
+                <title rect="20 90 115 22" align="left" text="Mode Unit 2" />
+                <ack rect="140 90 200 22" align="left" pos="86" />
+            </field>
+			
+			    <field type="state" datatype="list" listdata="NULL,Off,Diagnose,Ventilation,Full heating,Half heating,Full cooling,Half cooling,Auto,Self test">
+                <title rect="350 65 155 22" align="left" text="HVAC Work Mode " />
+                <ack rect="510 65 210 22" align="left" pos="89" />
+            </field>
+           
+			
+			
+			
+			
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 115 150 22" align="left" text="Self-test result" />
+                <ack rect="170 115 50 22" align="left" pos="98.0" />
+            </field>
+
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="255 115 150 22" align="left" text="Diagnose error" />
+                <ack rect="405 115 50 22" align="left" pos="98.1" />
+            </field>
+			
+			 <field type="state" datatype="bit" color="#f00000">
+                <title rect="480 115 150 22" align="left" text="HMI connect error" />
+                <ack rect="635 115 50 22" align="left" pos="99.0" />
+            </field>
+			
+			 <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 140 150 22" align="left" text="Power meter 1" />
+                <ack rect="170 140 50 22" align="left" pos="100.0" />
+            </field>
+			
+			 <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 165 150 22" align="left" text="Power meter 2" />
+                <ack rect="170 165 50 22" align="left" pos="100.1" />
+            </field>
+			
+			 <field type="state" datatype="bit" color="#f00000">
+                <title rect="255 140 150 22" align="left" text="Power meter 3" />
+                <ack rect="405 140 50 22" align="left" pos="100.2" />
+            </field>
+			 <field type="state" datatype="bit" color="#f00000">
+                <title rect="255 165 150 22" align="left" text="Power meter 4" />
+                <ack rect="405 165 50 22" align="left" pos="100.3" />
+       </field>
+		
+				 <field type="state" datatype="int16" color="#f00000">
+                <title rect="480 140 50 22" align="left" text="RC:" />
+                <ack rect="530 140 40 22" align="left" pos="125" />
+        </field>
+         <field type="state" datatype="int16" color="#00f000">
+                <title rect="570 140 20 22" align="left" text="." />
+                <ack rect="590 140 40 22" align="left" pos="127"/>
+         </field>
+			
+
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 195 380 22" align="left" text="Minor error U1" />
+                <ack rect="405 195 50 22" align="left" pos="98.2" />
+            </field>
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 220 380 22" align="left" text="Moderate error U1" />
+                <ack rect="405 220 50 22" align="left" pos="98.3" />
+            </field>
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 245 380 22" align="left" text="Major error U1" />
+                <ack rect="405 245 50 22" align="left" pos="98.4" />
+            </field>
+
+
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="480 195 305 22" align="left" text="Minor error U2" />
+                <ack rect="790 195 50 22" align="left" pos="98.5" />
+            </field>
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="480 220 305 22" align="left" text="Moderate error U2" />
+                <ack rect="790 220 50 22" align="left" pos="98.6" />
+            </field>
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="480 245 305 22" align="left" text="Major error U2" />
+                <ack rect="790 245 50 22" align="left" pos="98.7" />
+            </field>
+			
+        </frame>
+
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 840 1892 15" align="left" text="B4.bmp" />
+		</field>
+
+        <frame rect="20 900 850 270" text="XJ7_DO" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 15 720 22" align="left" text="1@A1-HVAC 1 Compressor 1 contactor K1" />
+                <ack rect="745 15 30 22" align="left" pos="21.0" />
+                <set rect="780 15 60 22" align="left" text="LOCK" pos="37.0" valid="49.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 40 720 22" align="left" text="2@B1-HVAC 1 Compressor 2 contactor K2" />
+                <ack rect="745 40 30 22" align="left" pos="21.1" />
+                <set rect="780 40 60 22" align="left" text="LOCK" pos="37.1" valid="49.1" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 65 720 22" align="left" text="3@A2-HVAC 1 Heater 1 Contactor K3" />
+                <ack rect="745 65 30 22" align="left" pos="21.2" />
+                <set rect="780 65 60 22" align="left" text="LOCK" pos="37.2" valid="49.2" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 90 720 22" align="left" text="4@B2-HVAC 1 Heater 2 Contactor K4" />
+                <ack rect="745 90 30 22" align="left" pos="21.3" />
+                <set rect="780 90 60 22" align="left" text="LOCK" pos="37.3" valid="49.3" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 115 720 22" align="left" text="5@A3-HVAC 1 Supply air fan normal contactor K5" />
+                <ack rect="745 115 30 22" align="left" pos="21.4" />
+                <set rect="780 115 60 22" align="left" text="LOCK" pos="37.4" valid="49.4" />
+            </field>
+
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 140 720 22" align="left" text="6@B3-HVAC 1 Condensor fan 1 contactor K6" />
+                <ack rect="745 140 30 22" align="left" pos="21.5" />
+                <set rect="780 140 60 22" align="left" text="LOCK" pos="37.5" valid="49.5" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 165 720 22" align="left" text="7@A4-HVAC 1 Condensor fan 2 contactor K7" />
+                <ack rect="745 165 30 22" align="left" pos="21.6" />
+                <set rect="780 165 60 22" align="left" text="LOCK" pos="37.6" valid="49.6" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 190 720 22" align="left" text="8@B4-HVAC 1 Smoke sensor test" />
+                <ack rect="745 190 30 22" align="left" pos="21.7" />
+                <set rect="780 190 60 22" align="left" text="LOCK" pos="37.7" valid="49.7" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 215 720 22" align="left" text="9@A5-HVAC 1 Supply air fan redundancy contactor K8" />
+                <ack rect="745 215 30 22" align="left" pos="22.0" />
+                <set rect="780 215 60 22" align="left" text="LOCK" pos="38.0" valid="50.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 240 720 22" align="left" text="10@B5-HVAC 2 Compressor 1 contactor" />
+                <ack rect="745 240 30 22" align="left" pos="22.1" />
+                <set rect="780 240 60 22" align="left" text="LOCK" pos="38.1" valid="50.1" />
+            </field>
+
+
+        </frame>
+
+
+        <frame rect="880 900 850 270" text="XJ8_DO" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 15 720 22" align="left" text="11@A1-HVAC 2 Compressor 2 contactor" />
+                <ack rect="745 15 30 22" align="left" pos="22.2" />
+                <set rect="780 15 60 22" align="left" text="LOCK" pos="38.2" valid="50.2" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 40 720 22" align="left" text="12@B1-HVAC 2 Heater 1 Contactor" />
+                <ack rect="745 40 30 22" align="left" pos="22.3" />
+                <set rect="780 40 60 22" align="left" text="LOCK" pos="38.3" valid="50.3" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 65 720 22" align="left" text="13@A2-HVAC 2 Heater 2 Contactor" />
+                <ack rect="745 65 30 22" align="left" pos="22.4" />
+                <set rect="780 65 60 22" align="left" text="LOCK" pos="38.4" valid="50.4" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 90 720 22" align="left" text="14@B2-HVAC 2 Supply air fan normal contactor K5" />
+                <ack rect="745 90 30 22" align="left" pos="22.5" />
+                <set rect="780 90 60 22" align="left" text="LOCK" pos="38.5" valid="50.5" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 115 720 22" align="left" text="15@A3-HVAC 2 Condensor fan 1" />
+                <ack rect="745 115 30 22" align="left" pos="22.6" />
+                <set rect="780 115 60 22" align="left" text="LOCK" pos="38.6" valid="50.6" />
+            </field>
+
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 140 720 22" align="left" text="16@B3-HVAC 2 Condensor fan 2 contactor K27" />
+                <ack rect="745 140 30 22" align="left" pos="22.7" />
+                <set rect="780 140 60 22" align="left" text="LOCK" pos="38.7" valid="50.7" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 165 720 22" align="left" text="17@A4-HVAC 2 Smoke sensor test" />
+                <ack rect="745 165 30 22" align="left" pos="23.0" />
+                <set rect="780 165 60 22" align="left" text="LOCK" pos="39.0" valid="51.0" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 190 720 22" align="left" text="18@B4-HVAC2 Supply air fan redundancy contactor K8" />
+                <ack rect="745 190 30 22" align="left" pos="23.1" />
+                <set rect="780 190 60 22" align="left" text="LOCK" pos="39.1" valid="51.1" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 215 720 22" align="left" text="19@A5-HVAC 1 and 2 Inverter of supply air fan" />
+                <ack rect="745 215 30 22" align="left" pos="23.2" log_text="null" />
+                <set rect="780 215 60 22" align="left" text="LOCK" pos="39.2" valid="51.2" />
+            </field>
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 240 720 22" align="left" text="20@B5-Control panel Smoke sensor test" />
+                <ack rect="745 240 30 22" align="left" pos="23.3" />
+                <set rect="780 240 60 22" align="left" text="LOCK" pos="39.3" valid="51.3" />
+            </field>
+        </frame>
+
+
+        <frame rect="880 630 850 200" text="XJ1_Temperature" color="#f0f0f0">
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 15 700 22" align="left" text="HVAC 1 Fresh air sensor FAS" />
+                <ack rect="725 15 55 22" align="left" pos="34" valid="82.0" />
+                <set rect="780 15 60 22" align="left" text="LOCK" pos="62" valid="110.0" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 40 700 22" align="left" text="HVAC 1 Return air sensor RAS" />
+                <ack rect="725 40 55 22" align="left" pos="36" valid="82.1" />
+                <set rect="780 40 60 22" align="left" text="LOCK" pos="64" valid="110.1" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 65 700 22" align="left" text="HVAC 1 Supply air sensor SAS" />
+                <ack rect="725 65 55 22" align="left" pos="38" valid="82.2" />
+                <set rect="780 65 60 22" align="left" text="LOCK" pos="66" valid="110.2" />
+            </field>
+
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 90 700 22" align="left" text="HVAC 2 Fresh air sensor FAS" />
+                <ack rect="725 90 55 22" align="left" pos="40" valid="82.3" />
+                <set rect="780 90 60 22" align="left" text="LOCK" pos="68" valid="110.3" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 115 700 22" align="left" text="HVAC 2 Return air sensor RAS" />
+                <ack rect="725 115 55 22" align="left" pos="42" valid="82.4" />
+                <set rect="780 115 60 22" align="left" text="LOCK" pos="70" valid="110.4" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 140 700 22" align="left" text="HVAC 2 Supply air sensor SAS" />
+                <ack rect="725 140 55 22" align="left" pos="44" valid="82.5" />
+                <set rect="780 140 60 22" align="left" text="LOCK" pos="72" valid="110.5" />
+            </field>
+        </frame>
+		
+		//------------------------------------------------------------------------------------------
+		        
+		<frame rect="20 2450 850 730" text="Error U1" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 15 590 22" align="left" text="1121 Fresh air sensor error" />
+                <ack rect="610 15 30 22" align="left" pos="91.0"/>				
+            </field>
+	
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 15 100 22" align="left" pos="681"/>  
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 15 100 22" align="left" pos="685"/>
+            </field>
+			
+		
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 40 590 22" align="left" text="1122 Return air sensor error" />
+                <ack rect="610 40 30 22" align="left" pos="91.1"/>
+            </field>
+		
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 40 100 22" align="left" pos="689"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 40 100 22" align="left" pos="693"/>
+            </field>
+			
+	
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 65 590 22" align="left" text="1123 Supply air sensor error" />
+                <ack rect="610 65 30 22" align="left" pos="91.2"/>
+            </field>
+	
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 65 100 22" align="left" pos="697"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 65 100 22" align="left" pos="701"/>
+            </field>
+			
+	
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 90 590 22" align="left" text="1231 Compressor 1 contactor error" />
+                <ack rect="610 90 30 22" align="left" pos="91.3"/>
+            </field>		
+		
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 90 100 22" align="left" pos="705"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 90 100 22" align="left" pos="709"/>
+            </field>	
+            <field type="state" datatype="bit" color="#f00000">
+			
+                <title rect="20 115 590 22" align="left" text="1232 Compressor 2 contactor error" />
+                <ack rect="610 115 30 22" align="left" pos="91.4"/>
+            </field>
+			
+	
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 115 100 22" align="left" pos="713"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 115 100 22" align="left" pos="717"/>
+            </field>
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 140 590 22" align="left" text="1233 Compressor 1 HIGH pressure error" />
+                <ack rect="610 140 30 22" align="left" pos="91.5"/>
+            </field>
+			
+			
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 140 100 22" align="left" pos="721"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 140 100 22" align="left" pos="725"/>
+            </field>		
+			
+
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 165 590 22" align="left" text="1234 Compressor 2 HIGH pressure error" />
+                <ack rect="610 165 30 22" align="left" pos="91.6"/>
+            </field>
+			
+			
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 165 100 22" align="left" pos="729"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 165 100 22" align="left" pos="733"/>
+            </field>		
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 190 590 22" align="left" text="1235 Compressor 1 low pressure error" />
+                <ack rect="610 190 30 22" align="left" pos="91.7"/>
+            </field>
+
+		
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 190 100 22" align="left" pos="737"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 190 100 22" align="left" pos="741"/>
+            </field>
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 215 590 22" align="left" text="1236 Compressor 2 low pressure error" />
+                <ack rect="610 215 30 22" align="left" pos="92.0"/>
+            </field>
+			
+			
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 215 100 22" align="left" pos="745"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 215 100 22" align="left" pos="749"/>
+            </field>		
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 240 590 22" align="left" text="1237 Compressor 1 current error" />
+                <ack rect="610 240 30 22" align="left" pos="92.1"/>
+            </field>
+			
+				
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 240 100 22" align="left" pos="753"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 240 100 22" align="left" pos="757"/>
+            </field>	
+			
+			
+		
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 265 590 22" align="left" text="1238 Compressor 2 current error" />
+                <ack rect="610 265 30 22" align="left" pos="92.2"/>
+            </field>
+			
+				
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 265 100 22" align="left" pos="761"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 265 100 22" align="left" pos="765"/>
+            </field>	
+			
+	//---------@@@@@@@@@@@@@@@@----Bangladesh-------------@@@@@@@@@@@@@@@@@@@@------------
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 290 590 22" align="left" text="1241 Heater 1 contactor error" />
+                <ack rect="610 290 30 22" align="left" pos="92.3"/>
+            </field>
+			
+				
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 290 100 22" align="left" pos="769"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 290 100 22" align="left" pos="773"/>
+            </field>	
+			
+		
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 315 590 22" align="left" text="1242 Heater 2 contactor error" />
+                <ack rect="610 315 30 22" align="left" pos="92.4"/>
+            </field>
+			
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 315 100 22" align="left" pos="777"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 315 100 22" align="left" pos="781"/>
+            </field>
+			
+
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 340 590 22" align="left" text="1243 Heater overheat error" />
+                <ack rect="610 340 30 22" align="left" pos="92.5"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 340 100 22" align="left" pos="785"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 340 100 22" align="left" pos="789"/>
+            </field>
+	//---------@@@@@@@@@@@@@@@@@-----------Bangladesh---------@@@@@@@@@@@@@@@@@---------//
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 365 590 22" align="left" text="1351 Supply air fan contactor error" />
+                <ack rect="610 365 30 22" align="left" pos="92.6"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 365 100 22" align="left" pos="793"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 365 100 22" align="left" pos="797"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 390 590 22" align="left" text="1252 Condensor air fan contactor error" />
+                <ack rect="610 390 30 22" align="left" pos="92.7"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 390 100 22" align="left" pos="801"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 390 100 22" align="left" pos="805"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 415 590 22" align="left" text="1353 Supply air fan overheat error" />
+                <ack rect="610 415 30 22" align="left" pos="93.0"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 415 100 22" align="left" pos="809"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 415 100 22" align="left" pos="813"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 440 590 22" align="left" text="1254 Condensor air fan overheat error" />
+                <ack rect="610 440 30 22" align="left" pos="93.1"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 440 100 22" align="left" pos="817"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 440 100 22" align="left" pos="821"/>
+            </field>
+			
+	/*------------------###########-------------Tanzania----------###########---------------------		
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 390 590 22" align="left" text="Condensor2 air fan contactor error" />
+                <ack rect="610 390 30 22" align="left" pos="93.2"/> 
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 390 100 22" align="left" pos="825"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 390 100 22" align="left" pos="829"/>
+            </field>
+			
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 415 590 22" align="left" text="Condensor2 air fan overheat error" />
+                <ack rect="610 415 30 22" align="left" pos="93.3"/> 
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 415 100 22" align="left" pos="833"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 415 100 22" align="left" pos="837"/>
+            </field>
+			
+			//----------------------------------------------------------------------------------------
+			
+				
+			
+--------------------------------------------###################################-----------*/			
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 465 690 22" align="left" text="Compressor 1 failure number" />
+                <ack rect="710 465 30 22" align="left" pos="1000.0"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 465 100 22" align="left" pos="1002"/>
+            </field>
+
+
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 490 690 22" align="left" text="Compressor 2 failure number" />
+                <ack rect="710 490 30 22" align="left" pos="1000.1"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 490 100 22" align="left" pos="1003"/>
+            </field>
+		
+		
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 515 690 22" align="left" text="Condensor air fan failure number" />
+                <ack rect="710 515 30 22" align="left" pos="1000.2"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 515 100 22" align="left" pos="1004"/>
+            </field>
+
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 540 690 22" align="left" text="Supply air fan 1 failure number" />
+                <ack rect="710 540 30 22" align="left" pos="1000.3"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 540 100 22" align="left" pos="1005"/>
+            </field>
+
+		
+		
+			
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 565 690 22" align="left" text="Heater 1 failure number" />
+                <ack rect="710 565 30 22" align="left" pos="1000.4"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 565 100 22" align="left" pos="1006"/>
+            </field>
+			
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 590 690 22" align="left" text="Heater 2 failure number" />
+                <ack rect="710 590 30 22" align="left" pos="1000.5"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 590 100 22" align="left" pos="1007"/>
+            </field>
+
+		   <field type="state" datatype="int8" color="#00f000">
+                <title rect="20 615 720 22" align="left" text="U1 compressor 1 countdown" />
+                <ack rect="740 615 100 22" align="left" pos="1014"/>
+            </field>
+			
+			<field type="state" datatype="int8" color="#00f000">
+                <title rect="20 640 720 22" align="left" text="U1 compressor 2 countdown" />
+                <ack rect="740 640 100 22" align="left" pos="1015"/>
+            </field>
+			
+				<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 665 590 22" align="left" text="Condensor2 air fan contactor error" />
+                <ack rect="610 665 30 22" align="left" pos="93.2"/> 
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 665 100 22" align="left" pos="825"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 665 100 22" align="left" pos="829"/>
+            </field>
+		
+
+
+
+
+			
+        </frame>
+		
+	//----------------------------------------------------------------------------------------------------------------	
+		 <frame rect="880 2450 850 730" text="Error U2" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 15 590 22" align="left" text="2121 Fresh air sensor error" />
+                <ack rect="610 15 30 22" align="left" pos="95.0"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 15 100 22" align="left" pos="841"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 15 100 22" align="left" pos="845"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 40 590 22" align="left" text="2122 Return air sensor error" />
+                <ack rect="610 40 30 22" align="left" pos="95.1"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 40 100 22" align="left" pos="849"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 40 100 22" align="left" pos="853"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 65 590 22" align="left" text="2123 Supply air sensor error" />
+                <ack rect="610 65 30 22" align="left" pos="95.2"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 65 100 22" align="left" pos="857"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 65 100 22" align="left" pos="861"/>
+            </field>
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 90 590 22" align="left" text="2231 Compressor 1 contactor error" />
+                <ack rect="610 90 30 22" align="left" pos="95.3"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 90 100 22" align="left" pos="865"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 90 100 22" align="left" pos="869"/>
+            </field>
+			
+            <field type="state" datatype="bit" color="#f00000">		
+                <title rect="20 115 590 22" align="left" text="2232 Compressor 2 contactor error" />
+                <ack rect="610 115 30 22" align="left" pos="95.4"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 115 100 22" align="left" pos="873"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 115 100 22" align="left" pos="877"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 140 590 22" align="left" text="2233 Compressor 1 HIGH pressure error" />
+                <ack rect="610 140 30 22" align="left" pos="95.5"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 140 100 22" align="left" pos="881"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 140 100 22" align="left" pos="885"/>
+            </field>
+
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 165 590 22" align="left" text="2234 Compressor 2 HIGH pressure error" />
+                <ack rect="610 165 30 22" align="left" pos="95.6"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 165 100 22" align="left" pos="889"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 165 100 22" align="left" pos="893"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 190 590 22" align="left" text="2235 Compressor 1 low pressure error" />
+                <ack rect="610 190 30 22" align="left" pos="95.7"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 190 100 22" align="left" pos="897"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 190 100 22" align="left" pos="901"/>
+            </field>
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 215 590 22" align="left" text="2236 Compressor 2 low pressure error" />
+                <ack rect="610 215 30 22" align="left" pos="96.0"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 215 100 22" align="left" pos="905"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 215 100 22" align="left" pos="909"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 240 590 22" align="left" text="2237 Compressor 1 current error" />
+                <ack rect="610 240 30 22" align="left" pos="96.1"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 240 100 22" align="left" pos="913"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 240 100 22" align="left" pos="917"/>
+            </field>
+					
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 265 590 22" align="left" text="2238 Compressor 2 current error" />
+                <ack rect="610 265 30 22" align="left" pos="96.2"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 265 100 22" align="left" pos="921"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 265 100 22" align="left" pos="925"/>
+            </field>
+			
+			//------@@@@@@@@@@@@@@@@----Bangladesh-----------@@@@@@@@@@@@@@@@@@@@@-------------
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 290 590 22" align="left" text="2241 Heater 1 contactor error" />
+                <ack rect="610 290 30 22" align="left" pos="96.3"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 290 100 22" align="left" pos="929"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 290 100 22" align="left" pos="933"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 315 590 22" align="left" text="2242 Heater 2 contactor error" />
+                <ack rect="610 315 30 22" align="left" pos="96.4"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 315 100 22" align="left" pos="937"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 315 100 22" align="left" pos="941"/>
+            </field>
+			
+			
+           
+		  <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 340 590 22" align="left" text="2243 Heater overheat error" />
+                <ack rect="610 340 30 22" align="left" pos="96.5"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 340 100 22" align="left" pos="945"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 340 100 22" align="left" pos="949"/>
+            </field>
+			//---------@@@@@@@@@@@@@@@@@-----Bangladesh----------@@@@@@@@@@@@@@@@----------*/
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 365 590 22" align="left" text="2351 Supply air fan contactor error" />
+                <ack rect="610 365 30 22" align="left" pos="96.6"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 365 100 22" align="left" pos="953"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 365 100 22" align="left" pos="957"/>
+            </field>
+							
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 390 590 22" align="left" text="2252 Condensor air fan contactor error" />
+                <ack rect="610 390 30 22" align="left" pos="96.7"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 390 100 22" align="left" pos="961"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 390 100 22" align="left" pos="965"/>
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 415 590 22" align="left" text="2353 Supply air fan overheat error" />
+                <ack rect="610 415 30 22" align="left" pos="97.0"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 415 100 22" align="left" pos="969"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 415 100 22" align="left" pos="973"/>
+            </field> 
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 440 590 22" align="left" text="2254 Condensor air fan overheat error" />
+                <ack rect="610 440 30 22" align="left" pos="97.1"/>
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 440 100 22" align="left" pos="977"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 440 100 22" align="left" pos="981"/>
+            </field>
+/*-------------------------------------------Tanzania---------------------------------------------		
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 390 590 22" align="left" text="2254 Condensor2 air fan contactor error" />
+                <ack rect="610 390 30 22" align="left" pos="97.2"/> 
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 390 100 22" align="left" pos="985"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 390 100 22" align="left" pos="989"/>
+            </field>
+			
+			<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 415 590 22" align="left" text="Condensor2 air fan overheat error" />
+                <ack rect="610 415 30 22" align="left" pos="97.3"/> 
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 415 100 22" align="left" pos="993"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 415 100 22" align="left" pos="997"/>
+            </field>
+			
+	-------------------------------------------Tanzania------------------------------------------*/		
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 465 690 22" align="left" text="Compressor 1 failure number" />
+                <ack rect="710 465 30 22" align="left" pos="1001.0"/> 
+             </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 465 100 22" align="left" pos="1008"/>
+            </field>
+
+
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 490 690 22" align="left" text="Compressor 2 failure number" />
+                <ack rect="710 490 30 22" align="left" pos="1001.1"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 490 100 22" align="left" pos="1009"/>
+            </field>
+		
+		
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 515 690 22" align="left" text="Condensor air fan failure number" />
+                <ack rect="710 515 30 22" align="left" pos="1001.2"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 515 100 22" align="left" pos="1010"/>
+            </field>
+
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 540 690 22" align="left" text="Supply air fan 1 failure number" />
+                <ack rect="710 540 30 22" align="left" pos="1001.3"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 540 100 22" align="left" pos="1011"/>
+            </field>
+
+	
+			
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 565 690 22" align="left" text="Heater 1 failure number" />
+                <ack rect="710 565 30 22" align="left" pos="1001.4"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 565 100 22" align="left" pos="1012"/>
+            </field>
+			
+		<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 590 690 22" align="left" text="Heater 2 failure number" />
+                <ack rect="710 590 30 22" align="left" pos="1001.5"/> 
+            </field>					
+			 <field type="state" datatype="int8" color="#00f000">
+                <ack rect="740 590 100 22" align="left" pos="1013"/>
+            </field>
+	
+			<field type="state" datatype="int8" color="#00f000">
+                <title rect="20 615 720 22" align="left" text="U2 compressor 1 countdown" />
+                <ack rect="740 615 100 22" align="left" pos="1016"/>
+            </field>
+			
+			<field type="state" datatype="int8" color="#00f000">
+                <title rect="20 640 720 22" align="left" text="U2 compressor 2 countdown" />
+                <ack rect="740 640 100 22" align="left" pos="1017"/>
+            </field>
+	
+	
+	<field type="state" datatype="bit" color="#f00000">
+                <title rect="20 665 590 22" align="left" text="2254 Condensor2 air fan contactor error" />
+                <ack rect="610 665 30 22" align="left" pos="97.2"/> 
+            </field>
+					
+			 <field type="state" datatype="int32" color="#00f000">
+                <ack rect="640 665 100 22" align="left" pos="985"/>
+            </field>
+			<field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 665 100 22" align="left" pos="989"/>
+            </field>
+	
+     </frame>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 1200 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+			
+			
+			
+			
+
+        <frame rect="20 1850 850 520" text="Timer U1" color="#f0f0f0">
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 15 620 22" align="left" text="Compressor 1 run" />
+                <ack rect="640 15 100 22" align="left" pos="313"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 15 100 22" align="left" pos="317"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 40 620 22" align="left" text="Compressor 2 run" />
+                <ack rect="640 40 100 22" align="left" pos="321"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 40 100 22" align="left" pos="325"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 65 620 22" align="left" text="Condenser1 fan run" />
+                <ack rect="640 65 100 22" align="left" pos="329"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 65 100 22" align="left" pos="333"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 90 620 22" align="left" text="Supply air fan run" />
+                <ack rect="640 90 100 22" align="left" pos="337"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 90 100 22" align="left" pos="341"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 115 620 22" align="left" text="Heater 1 run" />
+                <ack rect="640 115 100 22" align="left" pos="345"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 115 100 22" align="left" pos="349"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 140 620 22" align="left" text="Heater 2 run" />
+                <ack rect="640 140 100 22" align="left" pos="353"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 140 100 22" align="left" pos="357"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 165 620 22" align="left" text="Self-test mode" />
+                <ack rect="640 165 100 22" align="left" pos="361"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 165 100 22" align="left" pos="365"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 190 620 22" align="left" text="Maint mode " />
+                <ack rect="640 190 100 22" align="left" pos="369"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 190 100 22" align="left" pos="373"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 215 620 22" align="left" text="Off mode " />
+                <ack rect="640 215 100 22" align="left" pos="377"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 215 100 22" align="left" pos="381"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 240 620 22" align="left" text="Diagnose mode " />
+                <ack rect="640 240 100 22" align="left" pos="385"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 240 100 22" align="left" pos="389"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 265 620 22" align="left" text="Ventilation mode " />
+                <ack rect="640 265 100 22" align="left" pos="393"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 265 100 22" align="left" pos="397"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 290 620 22" align="left" text="Full heating mode " />
+                <ack rect="640 290 100 22" align="left" pos="401"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 290 100 22" align="left" pos="405"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 315 620 22" align="left" text="Half heating mode " />
+                <ack rect="640 315 100 22" align="left" pos="409"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 315 100 22" align="left" pos="413"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 340 620 22" align="left" text="Full cooling mode " />
+                <ack rect="640 340 100 22" align="left" pos="417"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 340 100 22" align="left" pos="421"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 365 620 22" align="left" text="Half cooling mode " />
+                <ack rect="640 365 100 22" align="left" pos="425"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 365 100 22" align="left" pos="429"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 390 620 22" align="left" text="Auto mode " />
+                <ack rect="640 390 100 22" align="left" pos="433"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 390 100 22" align="left" pos="437"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 415 620 22" align="left" text="Auto heating mode " />
+                <ack rect="640 415 100 22" align="left" pos="441"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 415 100 22" align="left" pos="445"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 440 620 22" align="left" text="Auto cooling mode " />
+                <ack rect="640 440 100 22" align="left" pos="449"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 440 100 22" align="left" pos="453"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 465 620 22" align="left" text="Auto ventilation mode " />
+                <ack rect="640 465 100 22" align="left" pos="457"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 465 100 22" align="left" pos="461"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 490 620 22" align="left" text="Condenser2 fan run" />
+                <ack rect="640 490 100 22" align="left" pos="465"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 490 100 22" align="left" pos="469"/>
+            </field>
+
+        </frame>
+
+        <frame rect="880 1850 850 520" text="Timer U2" color="#f0f0f0">
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 15 620 22" align="left" text="Compressor 1 run" />
+                <ack rect="640 15 100 22" align="left" pos="473"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 15 100 22" align="left" pos="477"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 40 620 22" align="left" text="Compressor 2 run" />
+                <ack rect="640 40 100 22" align="left" pos="481"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 40 100 22" align="left" pos="485"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 65 620 22" align="left" text="Condenser fan run" />
+                <ack rect="640 65 100 22" align="left" pos="489"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 65 100 22" align="left" pos="493"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 90 620 22" align="left" text="Supply air fan run" />
+                <ack rect="640 90 100 22" align="left" pos="497"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 90 100 22" align="left" pos="501"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 165-50 620 22" align="left" text="Heater 1 run" />
+                <ack rect="640 165-50 100 22" align="left" pos="505"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 165-50 100 22" align="left" pos="509"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 190-50 620 22" align="left" text="Heater 2 run" />
+                <ack rect="640 190-50 100 22" align="left" pos="513"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 190-50 100 22" align="left" pos="517"/>
+            </field>
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 215-50 620 22" align="left" text="Self-test mode " />
+                <ack rect="640 215-50 100 22" align="left" pos="521"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 215-50 100 22" align="left" pos="525"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 240-50 620 22" align="left" text="Maint mode " />
+                <ack rect="640 240-50 100 22" align="left" pos="529"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 240-50 100 22" align="left" pos="533"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 265-50 620 22" align="left" text="Off mode " />
+                <ack rect="640 265-50 100 22" align="left" pos="537"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 265-50 100 22" align="left" pos="541"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 290-50 620 22" align="left" text="Diagnose mode " />
+                <ack rect="640 290-50 100 22" align="left" pos="545"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 290-50 100 22" align="left" pos="549"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 315-50 620 22" align="left" text="Ventilation mode " />
+                <ack rect="640 315-50 100 22" align="left" pos="553"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 315-50 100 22" align="left" pos="557"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 340-50 620 22" align="left" text="Full heating mode " />
+                <ack rect="640 340-50 100 22" align="left" pos="561"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 340-50 100 22" align="left" pos="565"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 365-50 620 22" align="left" text="Half heating mode " />
+                <ack rect="640 365-50 100 22" align="left" pos="569"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 365-50 100 22" align="left" pos="573"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 390-50 620 22" align="left" text="Full cooling mode " />
+                <ack rect="640 390-50 100 22" align="left" pos="577"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 390-50 100 22" align="left" pos="581"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 415-50 620 22" align="left" text="Half cooling mode " />
+                <ack rect="640 415-50 100 22" align="left" pos="585"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 415-50 100 22" align="left" pos="589"/>
+            </field>
+
+
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 440-50 620 22" align="left" text="Auto mode " />
+                <ack rect="640 440-50 100 22" align="left" pos="593"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 440-50 100 22" align="left" pos="597"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 465-50 620 22" align="left" text="Auto heating mode " />
+                <ack rect="640 465-50 100 22" align="left" pos="601"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 465-50 100 22" align="left" pos="605"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 490-50 620 22" align="left" text="Auto cooling mode " />
+                <ack rect="640 490-50 100 22" align="left" pos="609"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 490-50 100 22" align="left" pos="613"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 515-50 620 22" align="left" text="Auto ventilation mode " />
+                <ack rect="640 515-50 100 22" align="left" pos="617"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 515-50 100 22" align="left" pos="621"/>
+            </field>
+            
+            
+            <field type="state" datatype="int32" color="#00f000">
+            <title rect="20 490 620 22" align="left" text="Condenser2 fan run" />
+            <ack rect="640 490 100 22" align="left" pos="833"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 490 100 22" align="left" pos="837"/>
+            </field>
+            
+            
+        </frame>
+
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 1800 1892 15" align="left" text="B4.bmp" />
+		</field>
+
+
+
+        <frame rect="880 1250 850 270" text="Timer Other" color="#f0f0f0">
+		    <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 15 620 22" align="left" text="Power On" />
+                <ack rect="640 15 100 22" align="left" pos="305"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 15 100 22" align="left" pos="309"/>
+            </field>
+			
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 40 620 22" align="left" text="1 Phase Power status" />
+                <ack rect="640 40 100 22" align="left" pos="625"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 40 100 22" align="left" pos="629"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 65 620 22" align="left" text="3 Phase Power status" />
+                <ack rect="640 65 100 22" align="left" pos="633"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 65 100 22" align="left" pos="637"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 90 620 22" align="left" text="Smoke status U1" />
+                <ack rect="640 90 100 22" align="left" pos="641"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 90 100 22" align="left" pos="645"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 115 620 22" align="left" text="Filter status U1" />
+                <ack rect="640 115 100 22" align="left" pos="649"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 115 100 22" align="left" pos="653"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 140 620 22" align="left" text="Smoke status U2" />
+                <ack rect="640 140 100 22" align="left" pos="657"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 140 100 22" align="left" pos="661"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 165 620 22" align="left" text="Filter status U2" />
+                <ack rect="640 165 100 22" align="left" pos="665"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 165 100 22" align="left" pos="669"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <title rect="20 190 620 22" align="left" text="Smoke status control panel" />
+                <ack rect="640 190 100 22" align="left" pos="673"/>
+            </field>
+            <field type="state" datatype="int32" color="#00f000">
+                <ack rect="740 190 100 22" align="left" pos="677"/>
+            </field>
+        </frame>
+
+
+
+
+
+        <frame rect="20 3280 420 120" text="Power meter 1 data" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="290 15 70 22" align="left" text="Online" />
+                <ack rect="360 15 30 22" align="left" pos="100.0" />
+            </field>
+
+            <field type="state" datatype="float16x100" color="#00f000">
+                <title rect="20 15 150 22" align="left" text="Frequency"/>
+                <ack rect="170 15 80 22" align="left" pos="101" valid="100.4"/>
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 40 150 22" align="left" text="Average voltage" />
+                <ack rect="170 40 80 22" align="left" pos="103" valid="100.4" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 65 150 22" align="left" text="Average current" />
+                <ack rect="170 65 80 22" align="left" pos="105" valid="100.4" />
+            </field>
+	/*		
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 90 150 22" align="left" text="Phase voltage V3" />
+                <ack rect="170 90 80 22" align="left" pos="107" valid="100.4" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 115 150 22" align="left" text="Average voltage" />
+                <ack rect="170 115 80 22" align="left" pos="109" valid="100.4" />
+            </field>
+
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 140 150 22" align="left" text="Phase current I1" />
+                <ack rect="170 140 80 22" align="left" pos="111" valid="100.4" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 165 150 22" align="left" text="Phase current I2" />
+                <ack rect="170 165 80 22" align="left" pos="113" valid="100.4" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 190 150 22" align="left" text="Phase current I3" />
+                <ack rect="170 190 80 22" align="left" pos="115" valid="100.4" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 215 150 22" align="left" text="Average current" />
+                <ack rect="170 215 80 22" align="left" pos="117" valid="100.4" />
+            </field>
+
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 240 300 22" align="left" text="Active power of phase separation P1" />
+                <ack rect="320 240 80 22" align="left" pos="119" valid="100.4" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 265 300 22" align="left" text="Active power of phase separation P2" />
+                <ack rect="320 265 80 22" align="left" pos="121" valid="100.4" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 290 300 22" align="left" text="Active power of phase separation P3" />
+                <ack rect="320 290 80 22" align="left" pos="123" valid="100.4" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 315 300 22" align="left" text="Sum of active power" />
+                <ack rect="320 315 80 22" align="left" pos="125" valid="100.4" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 340 230 22" align="left" text="Active power of the system" />
+                <ack rect="250 340 150 22" align="left" pos="127" valid="100.4" />
+            </field>
+		*/
+        </frame>
+
+        <frame rect="440 3280 420 120" text="Power meter 2 data" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="290 15 70 22" align="left" text="Online" />
+                <ack rect="360 15 30 22" align="left" pos="100.1" />
+            </field>
+
+            <field type="state" datatype="float16x100" color="#00f000">
+                <title rect="20 15 150 22" align="left" text="Frequency" />
+                <ack rect="170 15 80 22" align="left" pos="107" valid="100.5" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 40 150 22" align="left" text="Average voltage" />
+                <ack rect="170 40 80 22" align="left" pos="109" valid="100.5" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 65 150 22" align="left" text="Average current" />
+                <ack rect="170 65 80 22" align="left" pos="111" valid="100.5" />
+            </field>
+	/*		
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 90 150 22" align="left" text="Phase voltage V3" />
+                <ack rect="170 90 80 22" align="left" pos="137" valid="100.5" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 115 150 22" align="left" text="Average voltage" />
+                <ack rect="170 115 80 22" align="left" pos="139" valid="100.5" />
+            </field>
+
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 140 150 22" align="left" text="Phase current I1" />
+                <ack rect="170 140 80 22" align="left" pos="141" valid="100.5" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 165 150 22" align="left" text="Phase current I2" />
+                <ack rect="170 165 80 22" align="left" pos="143" valid="100.5" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 190 150 22" align="left" text="Phase current I3" />
+                <ack rect="170 190 80 22" align="left" pos="145" valid="100.5" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 215 150 22" align="left" text="Average current" />
+                <ack rect="170 215 80 22" align="left" pos="147" valid="100.5" />
+            </field>
+
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 240 300 22" align="left" text="Active power of phase separation P1" />
+                <ack rect="320 240 80 22" align="left" pos="149" valid="100.5" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 265 300 22" align="left" text="Active power of phase separation P2" />
+                <ack rect="320 265 80 22" align="left" pos="151" valid="100.5" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 290 300 22" align="left" text="Active power of phase separation P3" />
+                <ack rect="320 290 80 22" align="left" pos="153" valid="100.5" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 315 300 22" align="left" text="Sum of active power" />
+                <ack rect="320 315 80 22" align="left" pos="155" valid="100.5" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 340 230 22" align="left" text="Active power of the system" />
+                <ack rect="250 340 150 22" align="left" pos="157" valid="100.5" />
+            </field>
+		*/
+        </frame>
+
+        <frame rect="860 3280 420 120" text="Power meter 3 data" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="290 15 70 22" align="left" text="Online" />
+                <ack rect="360 15 30 22" align="left" pos="100.2" />
+            </field>
+
+            <field type="state" datatype="float16x100" color="#00f000">
+                <title rect="20 15 150 22" align="left" text="Frequency" />
+                <ack rect="170 15 80 22" align="left" pos="113" valid="100.6" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 40 150 22" align="left" text="Average voltage" />
+                <ack rect="170 40 80 22" align="left" pos="115" valid="100.6" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 65 150 22" align="left" text="Average current" />
+                <ack rect="170 65 80 22" align="left" pos="117" valid="100.6" />
+            </field>
+	/*		
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 90 150 22" align="left" text="Phase voltage V3" />
+                <ack rect="170 90 80 22" align="left" pos="167" valid="100.6" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 115 150 22" align="left" text="Average voltage" />
+                <ack rect="170 115 80 22" align="left" pos="169" valid="100.6" />
+            </field>
+
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 140 150 22" align="left" text="Phase current I1" />
+                <ack rect="170 140 80 22" align="left" pos="171" valid="100.6" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 165 150 22" align="left" text="Phase current I2" />
+                <ack rect="170 165 80 22" align="left" pos="173" valid="100.6" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 190 150 22" align="left" text="Phase current I3" />
+                <ack rect="170 190 80 22" align="left" pos="175" valid="100.6" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 215 150 22" align="left" text="Average current" />
+                <ack rect="170 215 80 22" align="left" pos="177" valid="100.6" />
+            </field>
+
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 240 300 22" align="left" text="Active power of phase separation P1" />
+                <ack rect="320 240 80 22" align="left" pos="179" valid="100.6" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 265 300 22" align="left" text="Active power of phase separation P2" />
+                <ack rect="320 265 80 22" align="left" pos="181" valid="100.6" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 290 300 22" align="left" text="Active power of phase separation P3" />
+                <ack rect="320 290 80 22" align="left" pos="183" valid="100.6" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 315 300 22" align="left" text="Sum of active power" />
+                <ack rect="320 315 80 22" align="left" pos="185" valid="100.6" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 340 230 22" align="left" text="Active power of the system" />
+                <ack rect="250 340 150 22" align="left" pos="187" valid="100.6" />
+            </field>
+*/
+        </frame>
+
+
+        <frame rect="1280 3280 420 120" text="Power meter 4 data" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="290 15 70 22" align="left" text="Online" />
+                <ack rect="360 15 30 22" align="left" pos="100.3" />
+            </field>
+
+
+            <field type="state" datatype="float16x100" color="#00f000">
+                <title rect="20 15 150 22" align="left" text="Frequency" />
+                <ack rect="170 15 80 22" align="left" pos="119" valid="100.7" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 40 150 22" align="left" text="Average voltage" />
+                <ack rect="170 40 80 22" align="left" pos="121" valid="100.7" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 65 150 22" align="left" text="Average current" />
+                <ack rect="170 65 80 22" align="left" pos="123" valid="100.7" />
+            </field>
+	/*		
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 90 150 22" align="left" text="Phase voltage V3" />
+                <ack rect="170 90 80 22" align="left" pos="197" valid="100.7" />
+            </field>
+            <field type="state" datatype="float16x10" color="#00f000">
+                <title rect="20 115 150 22" align="left" text="Average voltage" />
+                <ack rect="170 115 80 22" align="left" pos="199" valid="100.7" />
+            </field>
+
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 140 150 22" align="left" text="Phase current I1" />
+                <ack rect="170 140 80 22" align="left" pos="201" valid="100.7" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 165 150 22" align="left" text="Phase current I2" />
+                <ack rect="170 165 80 22" align="left" pos="203" valid="100.7" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 190 150 22" align="left" text="Phase current I3" />
+                <ack rect="170 190 80 22" align="left" pos="205" valid="100.7" />
+            </field>
+            <field type="state" datatype="float16x1000" color="#00f000">
+                <title rect="20 215 150 22" align="left" text="Average current" />
+                <ack rect="170 215 80 22" align="left" pos="207" valid="100.7" />
+            </field>
+
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 240 300 22" align="left" text="Active power of phase separation P1" />
+                <ack rect="320 240 80 22" align="left" pos="209" valid="100.7" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 265 300 22" align="left" text="Active power of phase separation P2" />
+                <ack rect="320 265 80 22" align="left" pos="211" valid="100.7" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 290 300 22" align="left" text="Active power of phase separation P3" />
+                <ack rect="320 290 80 22" align="left" pos="213" valid="100.7" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 315 300 22" align="left" text="Sum of active power" />
+                <ack rect="320 315 80 22" align="left" pos="215" valid="100.7" />
+            </field>
+            <field type="state" datatype="int16" color="#00f000">
+                <title rect="20 340 230 22" align="left" text="Active power of the system" />
+                <ack rect="250 340 150 22" align="left" pos="217" valid="100.7" />
+            </field>
+*/
+        </frame>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 2370 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+
+	<frame rect="20 1550 850 220" text="U1_Diagnose" color="#f0f0f0">
+             <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 15 765 22" align="left" text="Fan 1 error" />
+                <ack rect="790 15 50 22" align="left" pos="998.0"/>
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 40 765 22" align="left" text="Heat 1 error" />
+                <ack rect="790 40 50 22" align="left" pos="998.1"/>
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 65 765 22" align="left" text="Heat 2 error" />
+                <ack rect="790 65 50 22" align="left" pos="998.2"/>
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 90 765 22" align="left" text="Condenser 1 error" />
+                <ack rect="790 90 50 22" align="left" pos="998.3"/>
+            </field>
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 115 765 22" align="left" text="Condenser 2 error" />
+                <ack rect="790 115 50 22" align="left" pos="998.4"/>
+            </field>
+
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 140 765 22" align="left" text="Compressor 1 error" />
+                <ack rect="790 140 50 22" align="left" pos="998.5"/>
+            </field>
+            
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 165 765 22" align="left" text="Compressor 2 error" />
+                <ack rect="790 165 50 22" align="left" pos="998.6"/>
+            </field>
+            
+	    </frame>
+		    
+        <frame rect="880 1550 850 220" text="U2_Diagnose" color="#f0f0f0">
+             <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 15 765 22" align="left" text="Fan 1 error" />
+                <ack rect="790 15 50 22" align="left" pos="999.0"/>
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 40 765 22" align="left" text="Heat 1 error" />
+                <ack rect="790 40 50 22" align="left" pos="999.1"/>
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 65 765 22" align="left" text="Heat 2 error" />
+                <ack rect="790 65 50 22" align="left" pos="999.2"/>
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 90 765 22" align="left" text="Condenser 1 error" />
+                <ack rect="790 90 50 22" align="left" pos="999.3"/>
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 115 765 22" align="left" text="Condenser 2 error" />
+                <ack rect="790 115 50 22" align="left" pos="999.4"/>
+            </field>
+
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 140 765 22" align="left" text="Compressor 1 error" />
+                <ack rect="790 140 50 22" align="left" pos="999.5"/>
+            </field>	
+            
+             <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 165 765 22" align="left" text="Compressor 2 error" />
+                <ack rect="790 165 50 22" align="left" pos="999.6"/>
+            </field>	
+        </frame>
+
+
+        <frame rect="20 3750 1175 75" text="DEBUG" color="#f0f0f0">
+
+            <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 15 160 22" align="left" text="Ignore feedback" />
+                <ack rect="180 15 30 22" align="left" pos="4.0" log_text="null" />
+                <set rect="210 15 60 22" align="left" text="LOCK" pos="137.2" valid="140.7" />
+            </field>
+			
+			 
+			
+			 <field type="state" datatype="bit" color="#00f000">
+                <title rect="20 45 160 22" align="left" text="Force mode" />
+                <ack rect="180 45 30 22" align="left" pos="138.0" />
+                <set rect="210 45 60 22" align="left" text="LOCK" pos="138.0" valid="141.1" />
+            </field>
+
+
+        </frame>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 3200 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 3680 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 3850 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+		
+
+    </state_page>
+
+
+
+
+
+    <config_page get_len="260" set_len="260">
+	
+	<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 0 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="650 20 387 36" align="left" text="B3.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="1600 15 678 117" align="left" text="B2.bmp" />
+		</field>
+			
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 60 1892 15" align="left" text="B4.bmp" />
+		</field>
+	
+	
+
+        <frame rect="20 90 1150 80" text="Commonly used Settings" color="#f0f0f0">
+
+            <field type="config" datatype="bit">
+                <set rect="20 15 250 22" align="right" text="Restore default parameters" valid="114.2" />
+            </field>
+
+            <field type="config" datatype="datetime">
+                <title rect="320 15 80 22" align="right" text="Datetime" />
+                <ack rect="400 15 200 22" align="right" pos="5" />
+                <set rect="600 15 180 22" align="right" text="Synchronize with PC" pos="5" valid="107.1" />
+            </field>
+
+
+            <field type="config" datatype="int32">
+                <title rect="20 45 190 22" align="right" text="Number of fault records" />
+                <ack rect="210 45 100 22" align="right" pos="11" />
+                <set rect="310 45 80 22" align="right" text="clear" valid="114.0" />
+            </field>
+
+            <field type="config" datatype="int32">
+                <title rect="400 45 250 22" align="right" text="Number of running records" />
+                <ack rect="650 45 100 22" align="right" pos="96" />
+                <set rect="750 45 80 22" align="right" text="clear" valid="114.3" />
+            </field>
+        </frame>
+		
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 180 1892 15" align="left" text="B4.bmp" />
+		</field>
+
+
+
+        <frame rect="20 215 1150 850" text="Variables used Settings" color="#f0f0f0">
+            //3
+            <field type="config" datatype="int8">
+                <title rect="20 15 400 22" align="right" text="Mode switch delay" />
+                <ack rect="420 15 50 22" align="right" pos="131" />
+                <set rect="470 15 50 22" align="right" text="SET" pos="117" valid="240.0" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 15 400 22" align="right" text="Touch screen delay" />
+                <ack rect="950 15 50 22" align="right" pos="132" />
+                <set rect="1000 15 50 22" align="right" text="SET" pos="118" valid="240.1" />
+            </field>
+
+            //5
+            <field type="config" datatype="int8">
+                <title rect="20 40 400 22" align="right" text="Lastingtime of self test mode offset" />
+                <ack rect="420 40 50 22" align="right" pos="133" />
+                <set rect="470 40 50 22" align="right" text="SET" pos="119" valid="240.2" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 40 400 22" align="right" text="Random lastingtime of self test mode offset" />
+                <ack rect="950 40 50 22" align="right" pos="134" />
+                <set rect="1000 40 50 22" align="right" text="SET" pos="120" valid="240.3" />
+            </field>
+
+            //7
+            <field type="config" datatype="int16">
+                <title rect="20 65 400 22" align="right" text="Starting time of Cooling mode after selftesting" />
+                <ack rect="420 65 50 22" align="right" pos="135" />
+                <set rect="470 65 50 22" align="right" text="SET" pos="121" valid="240.4" />
+            </field>
+            <field type="config" datatype="float16x10">
+                <title rect="550 65 400 22" align="right" text="Diagnose mode fresh air temperature limit" />
+                <ack rect="950 65 50 22" align="right" pos="137" />
+                <set rect="1000 65 50 22" align="right" text="SET" pos="123" valid="240.5" />
+            </field>
+
+
+            //9
+            <field type="config" datatype="float16x10">
+                <title rect="20 90 400 22" align="right" text="Diagnose mode return air temperature limit" />
+                <ack rect="420 90 50 22" align="right" pos="139" />
+                <set rect="470 90 50 22" align="right" text="SET" pos="125" valid="240.6" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 90 400 22" align="right" text="3.3.2.4.3 Start of supply air fan" />
+                <ack rect="950 90 50 22" align="right" pos="141" />
+                <set rect="1000 90 50 22" align="right" text="SET" pos="127" valid="240.7" />
+            </field>
+
+            //11
+            <field type="config" datatype="int8">
+                <title rect="20 115 400 22" align="right" text="3.3.2.4.3 Start of 2 heaters in unit 1+2" />
+                <ack rect="420 115 50 22" align="right" pos="142" />
+                <set rect="470 115 50 22" align="right" text="SET" pos="128" valid="241.0" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 115 400 22" align="right" text="3.3.2.4.3 Stop of 2 heaters in unit 1+2" />
+                <ack rect="950 115 50 22" align="right" pos="143" />
+                <set rect="1000 115 50 22" align="right" text="SET" pos="129" valid="241.1" />
+            </field>
+
+            //13
+            <field type="config" datatype="int8">
+                <title rect="20 140 400 22" align="right" text="3.3.2.4.3 Start of condenser fan" />
+                <ack rect="420 140 50 22" align="right" pos="144" />
+                <set rect="470 140 50 22" align="right" text="SET" pos="130" valid="241.2" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 140 400 22" align="right" text="3.3.2.4.3 Start of compressor 1 in HVAC unit 1" />
+                <ack rect="950 140 50 22" align="right" pos="145" />
+                <set rect="1000 140 50 22" align="right" text="SET" pos="131" valid="241.3" />
+            </field>
+
+
+            //15
+            <field type="config" datatype="int8">
+                <title rect="20 165 400 22" align="right" text="3.3.2.4.3 Start of compressor 1 in HVAC unit 2" />
+                <ack rect="420 165 50 22" align="right" pos="146" />
+                <set rect="470 165 50 22" align="right" text="SET" pos="132" valid="241.4" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 165 400 22" align="right" text="3.3.2.4.3 Start of compressor 2 in HVAC unit 1" />
+                <ack rect="950 165 50 22" align="right" pos="147" />
+                <set rect="1000 165 50 22" align="right" text="SET" pos="133" valid="241.5" />
+            </field>
+
+
+            //17
+            <field type="config" datatype="int16">
+                <title rect="20 190 400 22" align="right" text="3.3.2.4.3 Start of compressor 2 in HVAC unit 2" />
+                <ack rect="420 190 50 22" align="right" pos="148" />
+                <set rect="470 190 50 22" align="right" text="SET" pos="134" valid="241.6" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 190 400 22" align="right" text="3.3.2.4.3 Stop of compressor 1 in HVAC unit 1" />
+                <ack rect="950 190 50 22" align="right" pos="150" />
+                <set rect="1000 190 50 22" align="right" text="SET" pos="136" valid="241.7" />
+            </field>
+
+            //19
+            <field type="config" datatype="int8">
+                <title rect="20 215 400 22" align="right" text="3.3.2.4.3 Stop of compressor 1 in HVAC unit 2" />
+                <ack rect="420 215 50 22" align="right" pos="151" />
+                <set rect="470 215 50 22" align="right" text="SET" pos="137" valid="242.0" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 215 400 22" align="right" text="3.3.2.4.3 Stop of compressor 2 in HVAC unit 1" />
+                <ack rect="950 215 50 22" align="right" pos="152" />
+                <set rect="1000 215 50 22" align="right" text="SET" pos="138" valid="242.1" />
+            </field>
+
+
+            //21
+            <field type="config" datatype="float16x10">
+                <title rect="20 240 400 22" align="right" text="One compressor running temperature Offset" />
+                <ack rect="420 240 50 22" align="right" pos="153" />
+                <set rect="470 240 50 22" align="right" text="SET" pos="139" valid="242.2" />
+            </field>
+            <field type="config" datatype="float16x10">
+                <title rect="550 240 400 22" align="right" text="Two compressors running temperature Offset" />
+                <ack rect="950 240 50 22" align="right" pos="155" />
+                <set rect="1000 240 50 22" align="right" text="SET" pos="141" valid="242.3" />
+            </field>
+
+
+            //23
+            <field type="config" datatype="float16x10">
+                <title rect="20 265 400 22" align="right" text="One heat running temperature Offset" />
+                <ack rect="420 265 50 22" align="right" pos="157" />
+                <set rect="470 265 50 22" align="right" text="SET" pos="143" valid="242.4" />
+            </field>
+            <field type="config" datatype="float16x10">
+                <title rect="550 265 400 22" align="right" text="Two heats running temperature Offset" />
+                <ack rect="950 265 50 22" align="right" pos="159" />
+                <set rect="1000 265 50 22" align="right" text="SET" pos="145" valid="242.5" />
+            </field>
+
+
+            //25
+            <field type="config" datatype="int16">
+                <title rect="20 290 400 22" align="right" text="Ventilation time between cooling and heating" />
+                <ack rect="420 290 50 22" align="right" pos="163" />
+                <set rect="470 290 50 22" align="right" text="SET" pos="149" valid="242.7" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 290 400 22" align="right" text="Touch screen Communication error delay" />
+                <ack rect="950 290 50 22" align="right" pos="165" />
+                <set rect="1000 290 50 22" align="right" text="SET" pos="151" valid="243.0" />
+            </field>
+
+
+
+            //27
+            <field type="config" datatype="int8">
+                <title rect="20 315 400 22" align="right" text="Power meter Communication error delay" />
+                <ack rect="420 315 50 22" align="right" pos="166" />
+                <set rect="470 315 50 22" align="right" text="SET" pos="152" valid="243.1" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 315 400 22" align="right" text="1121 1122 1123 2121 2122 2123 sensor error delay" />
+                <ack rect="950 315 50 22" align="right" pos="167" />
+                <set rect="1000 315 50 22" align="right" text="SET" pos="153" valid="243.2" />
+            </field>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+            //27
+            <field type="config" datatype="int16">
+                <title rect="20 370 180 44" align="right" text="Compressor contactor error  " />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="200 370 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="260 370 60 22" align="right" pos="168" />
+                <set rect="320 370 50 22" align="right" text="SET" pos="154" valid="243.3" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="200 392 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="260 392 60 22" align="right" pos="169" />
+                <set rect="320 392 50 22" align="right" text="SET" pos="155" valid="243.4" />
+            </field>
+            //28
+            <field type="config" datatype="int16">
+                <title rect="400 370 180 44" align="right" text="Compressor high pressure error" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="580 370 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="640 370 60 22" align="right" pos="171" />
+                <set rect="700 370 50 22" align="right" text="SET" pos="157" valid="243.5" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="580 392 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="640 392 60 22" align="right" pos="172" />
+                <set rect="700 392 50 22" align="right" text="SET" pos="158" valid="243.6" />
+            </field>
+            //29
+            <field type="config" datatype="int16">
+                <title rect="780 370 180 44" align="right" text="Compressor low pressure error" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="960 370 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="1020 370 60 22" align="right" pos="174" />
+                <set rect="1080 370 50 22" align="right" text="SET" pos="160" valid="243.7" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="960 392 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="1020 392 60 22" align="right" pos="175" />
+                <set rect="1080 392 50 22" align="right" text="SET" pos="161" valid="244.0" />
+            </field>
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////// //30
+            <field type="config" datatype="int16">
+                <title rect="20 420 180 44" align="rightt" text="Condensor air fan contactor error" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="200 420 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="260 420 60 22" align="right" pos="189" />
+                <set rect="320 420 50 22" align="right" text="SET" pos="175" valid="245.1" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="200 442 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="260 442 60 22" align="right" pos="190" />
+                <set rect="320 442 50 22" align="right" text="SET" pos="176" valid="245.2" />
+            </field>
+
+
+
+
+
+            //31
+            <field type="config" datatype="int16">
+                <title rect="400 420 180 44" align="right" text="Heater contactor error" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="580 420 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="640 420 60 22" align="right" pos="180" />
+                <set rect="700 420 50 22" align="right" text="SET" pos="166" valid="244.3" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="580 442 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="640 442 60 22" align="right" pos="181" />
+                <set rect="700 442 50 22" align="right" text="SET" pos="167" valid="244.4" />
+            </field>
+            //32
+            <field type="config" datatype="int16">
+                <title rect="780 420 180 44" align="right" text="Heater overheat error" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="960 420 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="1020 420 60 22" align="right" pos="183" />
+                <set rect="1080 420 50 22" align="right" text="SET" pos="169" valid="244.5" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="960 442 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="1020 442 60 22" align="right" pos="184" />
+                <set rect="1080 442 50 22" align="right" text="SET" pos="170" valid="244.6" />
+            </field>
+
+
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////// //33
+            <field type="config" datatype="int16">
+                <title rect="20 470 180 44" align="right" text="Supply air fan contactor error" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="200 470 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="260 470 60 22" align="right" pos="186" />
+                <set rect="320 470 50 22" align="right" text="SET" pos="172" valid="244.7" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="200 492 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="260 492 60 22" align="right" pos="187" />
+                <set rect="320 492 50 22" align="right" text="SET" pos="173" valid="245.0" />
+            </field>
+            //34
+            <field type="config" datatype="int16">
+                <title rect="400 470 180 44" align="right" text="Compressor current error  " />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="580 470 60 22" align="right" text="Trigger" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="640 470 60 22" align="right" pos="177" />
+                <set rect="700 470 50 22" align="right" text="SET" pos="163" valid="244.1" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="580 492 60 22" align="right" text="Delay" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="640 492 60 22" align="right" pos="178" />
+                <set rect="700 492 50 22" align="right" text="SET" pos="164" valid="244.2" />
+            </field>
+            //
+            <field type="config" datatype="float16x10">
+                <title rect="755 470 60 22" align="right" text="Max1" />
+            </field>
+            <field type="config" datatype="float16x10">
+                <ack rect="815 470 60 22" align="right" pos="192" />
+                <set rect="875 470 50 22" align="right" text="SET" pos="178" valid="245.3" />
+            </field>
+            <field type="config" datatype="float16x10">
+                <title rect="755 492 60 22" align="right" text="Min1" />
+            </field>
+            <field type="config" datatype="float16x10">
+                <ack rect="815 492 60 22" align="right" pos="194" />
+                <set rect="875 492 50 22" align="right" text="SET" pos="180" valid="245.4" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="930 470 60 22" align="right" text="Max2" />
+            </field>
+            <field type="config" datatype="int8">
+                <ack rect="980 470 60 22" align="right" pos="196" />
+                <set rect="1040 470 50 22" align="right" text="SET" pos="182" valid="245.5" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="930 492 60 22" align="right" text="Min2" />
+            </field>
+            <field type="config" datatype="int16">
+                <ack rect="980 492 60 22" align="right" pos="198" />
+                <set rect="1040 492 50 22" align="right" text="SET" pos="184" valid="245.6" />
+            </field>
+
+
+            <field type="config" datatype="int16">
+                <title rect="20 530 240 22" align="right" text="Compressor error Waiting time" />
+                <ack rect="260 530 50 22" align="right" pos="200" />
+                <set rect="310 530 50 22" align="right" text="SET" pos="186" valid="245.7" />
+            </field>
+
+            <field type="config" datatype="int16">
+                <title rect="380 530 230 22" align="right" text="Heater error Waiting time" />
+                <ack rect="610 530 50 22" align="right" pos="202" />
+                <set rect="660 530 50 22" align="right" text="SET" pos="188" valid="246.0" />
+            </field>
+
+            <field type="config" datatype="int16">
+                <title rect="740 530 230 22" align="right" text="Condensor error Waiting time" />
+                <ack rect="970 530 50 22" align="right" pos="204" />
+                <set rect="1020 530 50 22" align="right" text="SET" pos="190" valid="246.1" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="20 555 230 22" align="right" text="Supply error Waiting time" />
+                <ack rect="250 555 50 22" align="right" pos="206" />
+                <set rect="300 555 50 22" align="right" text="SET" pos="192" valid="246.2" />
+            </field>
+
+            <field type="config" datatype="float16x10">
+                <title rect="20 585 230 22" align="right" text="Temperature setpoint" />
+                <ack rect="250 585 50 22" align="right" pos="208" />
+                <set rect="300 585 50 22" align="right" text="SET" pos="194" valid="246.3" />
+            </field>
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////
+            <field type="config" datatype="float16x10">
+                <title rect="20 615 230 22" align="right" text="Overheat ventilation" />
+                <ack rect="250 615 50 22" align="right" pos="210" />
+                <set rect="300 615 50 22" align="right" text="SET" pos="196" valid="246.4" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="350 615 105 22" align="right" text="continuously" />
+                <ack rect="455 615 50 22" align="right" pos="212" />
+                <set rect="505 615 50 22" align="right" text="SET" pos="198" valid="246.5" />
+            </field>
+
+            <field type="config" datatype="float16x10">
+                <title rect="565 615 160 22" align="right" text="Restore temperature" />
+                <ack rect="725 615 50 22" align="right" pos="214" />
+                <set rect="775 615 50 22" align="right" text="SET" pos="200" valid="246.6" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="825 615 105 22" align="right" text="continuously" />
+                <ack rect="930 615 50 22" align="right" pos="216" />
+                <set rect="980 615 50 22" align="right" text="SET" pos="202" valid="246.7" />
+            </field>
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////
+            <field type="config" datatype="float16x10">
+                <title rect="20 640 230 22" align="right" text="Overheat off" />
+                <ack rect="250 640 50 22" align="right" pos="218" />
+                <set rect="300 640 50 22" align="right" text="SET" pos="204" valid="247.0" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="350 640 105 22" align="right" text="continuously" />
+                <ack rect="455 640 50 22" align="right" pos="220" />
+                <set rect="505 640 50 22" align="right" text="SET" pos="206" valid="247.1" />
+            </field>
+
+            <field type="config" datatype="float16x10">
+                <title rect="565 640 160 22" align="right" text="Restore temperature" />
+                <ack rect="725 640 50 22" align="right" pos="222" />
+                <set rect="775 640 50 22" align="right" text="SET" pos="208" valid="247.2" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="825 640 105 22" align="right" text="continuously" />
+                <ack rect="930 640 50 22" align="right" pos="224" />
+                <set rect="980 640 50 22" align="right" text="SET" pos="210" valid="247.3" />
+            </field>
+
+            //////////////////////////////////////////////////////////////
+            <field type="config" datatype="int8">
+                <title rect="20 670 400 22" align="right" text="Supply run to condenser run waiting time" />
+                <ack rect="420 670 50 22" align="right" pos="226" />
+                <set rect="470 670 50 22" align="right" text="SET" pos="212" valid="247.4" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 670 400 22" align="right" text="Condenser run to Compressor run waiting time" />
+                <ack rect="950 670 50 22" align="right" pos="227" />
+                <set rect="1000 670 50 22" align="right" text="SET" pos="213" valid="247.5" />
+            </field>
+            //////////////////////////////////////////////////////////////
+            <field type="config" datatype="int8">
+                <title rect="20 695 400 22" align="right" text="Compressor run to Compressor run waiting time" />
+                <ack rect="420 695 50 22" align="right" pos="228" />
+                <set rect="470 695 50 22" align="right" text="SET" pos="214" valid="247.6" />
+            </field>
+            <field type="config" datatype="int16">
+                <title rect="550 695 400 22" align="right" text="Compressor min running time" />
+                <ack rect="950 695 50 22" align="right" pos="229" />
+                <set rect="1000 695 50 22" align="right" text="SET" pos="215" valid="247.7" />
+            </field>
+            //////////////////////////////////////////////////////////////
+            <field type="config" datatype="int16">
+                <title rect="20 720 400 22" align="right" text="Compressor min stopping time" />
+                <ack rect="420 720 50 22" align="right" pos="231" />
+                <set rect="470 720 50 22" align="right" text="SET" pos="217" valid="248.0" />
+            </field>
+            <field type="config" datatype="int8">
+                <title rect="550 720 400 22" align="right" text="Min. off time of other devices" />
+                <ack rect="950 720 50 22" align="right" pos="233" />
+                <set rect="1000 720 50 22" align="right" text="SET" pos="219" valid="248.1" />
+            </field>
+            //////////////////////////////////////////////////////////////
+            <field type="config" datatype="int8">
+                <title rect="20 745 400 22" align="right" text="Supply run to heaters run waiting time" />
+                <ack rect="420 745 50 22" align="right" pos="234" />
+                <set rect="470 745 50 22" align="right" text="SET" pos="220" valid="248.2" />
+            </field>
+
+            <field type="config" datatype="float16x10">
+                <title rect="550 745 225 22" align="right" text="Max supply air temperature" />
+                <ack rect="775 745 50 22" align="right" pos="235" />
+                <set rect="825 745 50 22" align="right" text="SET" pos="221" valid="248.3" />
+            </field>
+            <field type="config" datatype="float16x10">
+                <title rect="875 745 70 22" align="right" text="Restore" />
+                <ack rect="945 745 50 22" align="right" pos="237" />
+                <set rect="995 745 50 22" align="right" text="SET" pos="223" valid="248.4" />
+            </field>
+
+            <field type="config" datatype="int16">
+                <title rect="20 770 400 22" align="right" text="Supply air fan running time after off" />
+                <ack rect="420 770 50 22" align="right" pos="239" />
+                <set rect="470 770 50 22" align="right" text="SET" pos="225" valid="248.5" />
+            </field>
+			
+			  <field type="config" datatype="int8">
+                <title rect="550 770 225 22" align="right" text="Full_cool_temp_parm_A" />
+                <ack rect="775 770 50 22" align="right" pos="241" />
+                <set rect="825 770 50 22" align="right" text="SET" pos="227" valid="248.6" />
+            </field>
+	
+			  <field type="config" datatype="int8">
+                <title rect="20 795 225 22" align="right" text="Full_cool_temp_parm_B" />
+                <ack rect="245 795 50 22" align="right" pos="242" />
+                <set rect="295 795 50 22" align="right" text="SET" pos="228" valid="248.7" />
+            </field>
+		
+			  <field type="config" datatype="int16">
+                <title rect="550 795 225 22" align="right" text="Full_cool_temp_parm_C" />
+                <ack rect="775 795 50 22" align="right" pos="243" />
+                <set rect="825 795 50 22" align="right" text="SET" pos="229" valid="249.0" />
+            </field>
+			
+			
+			
+			
+        </frame>
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 1080 1892 15" align="left" text="B4.bmp" />
+		</field>
+
+    </config_page>
+
+
+
+    <log_page get_len="80" set_len="19">
+	
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 0 1892 15" align="left" text="B4.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="650 20 387 36" align="left" text="B3.bmp" />
+		</field>
+		
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="1600 15 678 117" align="left" text="B2.bmp" />
+		</field>
+			
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 60 1892 15" align="left" text="B4.bmp" />
+		</field>
+	
+	
+	
+	
+		<field type="log" datatype="int32">
+		<title rect="50 90 200 22" align="left" text="Number of fault records"/>
+			<ack rect="260 90 100 22" align="right" pos="5" log_text="null"/>
+		</field>
+		<field type="log" datatype="int32" color="#00f000">
+		<title rect="380 90 160 22" align="right" text="Fault record number"/>
+			<ack rect="550 90 40 22" align="right" pos="9" />
+		</field>
+		<field type="log" datatype="datetime">
+			<title rect="650 90 80 22" align="left" text="DateTime" />
+			<ack rect="735 90 245 22" align="left" pos="13" />
+		</field>
+	
+	<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 130 1892 15" align="left" text="B4.bmp" />
+		</field>
+	
+	
+	
+	
+	
+        <frame rect="40 160 380 495" text="Error U1" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 15 200 22" align="left" text="Fresh air sensor error" />
+                <ack rect="220 15 50 22" align="left" pos="21.0" />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 40 200 22" align="left" text="Return air sensor error" />
+                <ack rect="220 40 50 22" align="left" pos="21.1"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 65 200 22" align="left" text="Supply air sensor error" />
+                <ack rect="220 65 50 22" align="left" pos="21.2" />
+            </field>           
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 90 250 22" align="left" text="Compressor 1 contactor error" />
+                <ack rect="270 90 50 22" align="left" pos="21.3"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 115 250 22" align="left" text="Compressor 2 contactor error" />
+                <ack rect="270 115 50 22" align="left" pos="21.4" />
+            </field>
+
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 140 270 22" align="left" text="Compressor 1 HIGH pressure error" />
+                <ack rect="290 140 50 22" align="left" pos="21.5"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 165 270 22" align="left" text="Compressor 2 HIGH pressure error" />
+                <ack rect="290 165 50 22" align="left" pos="21.6"  />
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 190 270 22" align="left" text="Compressor 1 low pressure error" />
+                <ack rect="290 190 50 22" align="left" pos="21.7" />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 215 270 22" align="left" text="Compressor 2 low pressure error" />
+                <ack rect="290 215 50 22" align="left" pos="22.0"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 240 270 22" align="left" text="Compressor 1 current error" />
+                <ack rect="290 240 50 22" align="left" pos="22.1" />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 265 270 22" align="left" text="Compressor 2 current error" />
+                <ack rect="290 265 50 22" align="left" pos="22.2"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 290 270 22" align="left" text="Heater 1 contactor error" />
+                <ack rect="290 290 50 22" align="left" pos="22.3"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 315 270 22" align="left" text="Heater 2 contactor error" />
+                <ack rect="290 315 50 22" align="left" pos="22.4" />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 340 270 22" align="left" text="Heater overheat error" />
+                <ack rect="290 340 50 22" align="left" pos="22.5"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 365 270 22" align="left" text="Supply air fan contactor error" />
+                <ack rect="290 365 50 22" align="left" pos="22.6" />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 390 270 22" align="left" text="Condensor air fan contactor error" />
+                <ack rect="290 390 50 22" align="left" pos="22.7"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 415 270 22" align="left" text="Supply air fan overheat error" />
+                <ack rect="290 415 50 22" align="left" pos="23.0"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 440 270 22" align="left" text="Condensor air fan overheat error" />
+                <ack rect="290 440 50 22" align="left" pos="23.1"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 465 270 22" align="left" text="Condensor2 air contactor error" />
+                <ack rect="290 465 50 22" align="left" pos="23.2"  />
+            </field>
+        </frame>
+
+
+        <frame rect="500 160 380 495" text="Error U2" color="#f0f0f0">
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 15 200 22" align="left" text="Fresh air sensor error" />
+                <ack rect="220 15 50 22" align="left" pos="24.0"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 40 200 22" align="left" text="Return air sensor error" />
+                <ack rect="220 40 50 22" align="left" pos="24.1"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 65 200 22" align="left" text="Supply air sensor error" />
+                <ack rect="220 65 50 22" align="left" pos="24.2"  />
+            </field>
+           
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 90 250 22" align="left" text="Compressor 1 contactor error" />
+                <ack rect="270 90 50 22" align="left" pos="24.3"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 115 250 22" align="left" text="Compressor 2 contactor error" />
+                <ack rect="270 115 50 22" align="left" pos="24.4" />
+            </field>
+
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 140 270 22" align="left" text="Compressor 1 HIGH pressure error" />
+                <ack rect="290 140 50 22" align="left" pos="24.5"  />
+            </field>
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 165 270 22" align="left" text="Compressor 2 HIGH pressure error" />
+                <ack rect="290 165 50 22" align="left" pos="24.6"  />
+            </field>
+			
+			
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 190 270 22" align="left" text="Compressor 1 low pressure error" />
+                <ack rect="290 190 50 22" align="left" pos="24.7"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 215 270 22" align="left" text="Compressor 2 low pressure error" />
+                <ack rect="290 215 50 22" align="left" pos="25.0" />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 240 270 22" align="left" text="Compressor 1 current error" />
+                <ack rect="290 240 50 22" align="left" pos="25.1"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 265 270 22" align="left" text="Compressor 2 current error" />
+                <ack rect="290 265 50 22" align="left" pos="25.2"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 290 270 22" align="left" text="Heater 1 contactor error" />
+                <ack rect="290 290 50 22" align="left" pos="25.3"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 315 270 22" align="left" text="Heater 2 contactor error" />
+                <ack rect="290 315 50 22" align="left" pos="25.4"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 340 270 22" align="left" text="Heater overheat error" />
+                <ack rect="290 340 50 22" align="left" pos="25.5"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 365 270 22" align="left" text="Supply air fan contactor error" />
+                <ack rect="290 365 50 22" align="left" pos="25.6"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 390 270 22" align="left" text="Condensor air fan contactor error" />
+                <ack rect="290 390 50 22" align="left" pos="25.7"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 415 270 22" align="left" text="Supply air fan overheat error" />
+                <ack rect="290 415 50 22" align="left" pos="26.0"  />
+            </field>
+            <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 440 270 22" align="left" text="Condensor air fan overheat error" />
+                <ack rect="290 440 50 22" align="left" pos="26.1"  />
+            </field>
+             <field type="state" datatype="bit" color="#f00000">
+                <title rect="20 465 270 22" align="left" text="Condensor2 air contactor error" />
+                <ack rect="290 465 50 22" align="left" pos="26.2"  />
+            </field>
+
+        </frame>
+	
+		<field type="state" datatype="bmp" color="#00f000">
+			<title rect="0 660 1892 15" align="left" text="B4.bmp" />
+		</field>
+	
+	
+    </log_page>
+
+</cmdl>

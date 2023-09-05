@@ -1,0 +1,14 @@
+/src/logic/bak/NetVar.cpp
+/src/logic/bak/NetVar.h
+/src/logic/bak/TempSensor.cpp
+/src/logic/bak/TempSensor.h
+/src/logic/CP/*.o
+/src/*.o
+/src/logic/*.o
+/vs/.vs/sz20_logic/v16/.suo
+/vs/.vs/sz20_logic/v16/Solution.VC.db
+/vs/Debug/test.vcxprojAssemblyReference.cache
+/ac_v6_sz20_logic.elf
+/src/logic/CP/modbus/*.o
+/src/logic/CP/net/*.o
+/*.cfg
