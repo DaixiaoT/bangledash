@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "limits": "cpp"
+    },
+    "C_Cpp.default.systemIncludePath": ["C:\\DXT\\bangledash\\st_core\\**"],
+    "C_Cpp.default.includePath": ["C:\\DXT\\bangledash\\**"],
+}

@@ -1,6 +1,6 @@
 #ifndef _SST25VF064B_H_
 #define _SST25VF064B_H_
-#include "sys_api.h"
+#include "ac_include.h"
 
 #define SPI_FLASH_SIZE 0x800000
 #define SPI_FLASH_TEST_SIZE 0x800

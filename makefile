@@ -35,6 +35,13 @@ INCDIRS += src/logic src/logic/$(LOGIC)/net
 CPPSRCS += $(wildcard src/logic/$(LOGIC)/modbus/*.cpp) $(wildcard src/logic/$(LOGIC)/modbus/ModBus-Master/*.cpp)
 INCDIRS += src/logic src/logic/$(LOGIC)/modbus src/logic src/logic/$(LOGIC)/modbus/ModBus-Master
 
+#ptu
+INCDIRS += src/logic src/logic/CP/ptu
+CPPSRCS += $(wildcard src/logic/CP/ptu/*.cpp)
+
+
+
+
 #trdp
 #CPPSRCS +=  $(wildcard $(CORE)/trdp/dg/common/src/*.cpp) $(wildcard $(CORE)/trdp/dg/target/src/*.cpp) 
 #INCDIRS += $(CORE)/trdp/dg/common/inc $(CORE)/trdp/dg/target/inc 
