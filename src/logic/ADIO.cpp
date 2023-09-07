@@ -1,129 +1,121 @@
 #include "ADIO.h"
 
 // 从字符数组中取特定位
-static inline int get_bit(U8 *buf, int n)
+static inline U8 get_bit(U8 *buf, U8 index)
 {
-    U8 mask = 0x01 << (n & 7);
-    if (buf[n / 8] & mask)
+    U8 mask = 0x01 << (index & 7);
+    if (buf[index / 8] & mask)
         return 1;
     return 0;
 }
 
 // 设置字符数字中的特定位
-static inline void set_bit(U8 *buf, int n, int v)
+static inline void set_bit(U8 *buf, U8 index, U8 value)
 {
-    U8 mask = 0x01 << (n & 7);
-    if (v)
-        buf[n / 8] |= mask;
+    U8 mask = 0x01 << (index & 7);
+    if (value)
+        buf[index / 8] |= mask;
     else
-        buf[n / 8] &= ~mask;
+        buf[index / 8] &= ~mask;
 }
 
-int DIO::Get(int n) // 取第n位的值
+U8 DIO::Get(U8 index) // 取第index位的值
 {
-    if (n < 0 || n >= m_num)
+    if (index < 0 || index >= m_num)
     {
-        PRINT_ERR_INT(n);
-        // PRINT_ERR_INT(m_num);
         return 0;
     }
 
-    int f = get_bit(m_f, n);
+    U8 force = get_bit(m_force, index);
 
-    return get_bit((f) ? m_fv : m_v, n);
+    return get_bit((force) ? m_force_value : m_value, index);
 }
 
-int DIO::GetNotForce(int n) // 取第n位的值
+U8 DIO::GetNotForce(U8 index) // 取第index位的值
 {
-    if (n < 0 || n >= m_num)
+    if (index < 0 || index >= m_num)
         return 0;
 
-    return get_bit(m_v, n);
+    return get_bit(m_value, index);
 }
 
-void DIO::Set(int n, int v) // 设第n位 = v
+void DIO::Set(U8 index, U8 value) // 设第index位 = value
 {
-    if (n < 0 || n >= m_num)
+    if (index < 0 || index >= m_num)
     {
-        PRINT_ERR_INT(n);
         return;
     }
 
-    set_bit(m_v, n, v);
+    set_bit(m_value, index, value);
 }
 
-void DIO::SetForce(int n, int f, int v) // 强制设置第n位 = v
+void DIO::SetForce(U8 index, U8 force, U8 value) // 强制设置第index位 = value
 {
-    if (n < 0 || n >= m_num)
+    if (index < 0 || index >= m_num)
     {
-        PRINT_ERR_INT(n);
         return;
     }
 
-    if (f)
+    if (force)
     {
-        set_bit(m_f, n, 1);
-        set_bit(m_fv, n, v);
-        //         LOG_PRINT("DIO::SetForce() %d ,%d\n",n,v);
-        //         LOG_PRINT("DIO::SetForce() 0x%x ,0x%x\n",m_f[0],m_fv[0]);
+        set_bit(m_force, index, 1);
+        set_bit(m_force_value, index, value);
     }
     else
-        set_bit(m_f, n, 0);
+        set_bit(m_force, index, 0);
 }
 
 #define DIO_BYTES ((m_num + 7) >> 3)
-BOOL DIO::SetAll(U8 *buf, int len) // 全部设置
+BOOL DIO::SetAll(U8 *buf, U8 len) // 全部设置
 {
     if (len < DIO_BYTES)
     {
-        LOG_PRINT("err DIO::SetAll len=%d m_num=%d\n", len, m_num);
         return FALSE;
     }
-    mem_copy(m_v, buf, DIO_BYTES);
+    mem_copy(m_value, buf, DIO_BYTES);
     m_updateTime = sys_time();
     return TRUE;
 }
 
-BOOL DIO::SetForceAll(int f, U8 *buf, int len) // 全部设置
+BOOL DIO::SetForceAll(U8 force, U8 *buf, U8 len) // 全部设置
 {
     if (len < DIO_BYTES)
     {
-        LOG_PRINT("err DIO::SetForceAll len=%d m_num=%d\n", len, m_num);
         return FALSE;
     }
 
-    if (f)
+    if (force)
     {
-        mem_set(m_f, 0xff, DIO_BYTES);
-        mem_copy(m_fv, buf, DIO_BYTES);
+        mem_set(m_force, 0xff, DIO_BYTES);
+        mem_copy(m_force_value, buf, DIO_BYTES);
     }
     else
-        mem_set(m_f, 0, DIO_BYTES);
+        mem_set(m_force, 0, DIO_BYTES);
 
     m_updateTime = sys_time();
     return TRUE;
 }
 
-int DIO::GetAll(U8 *buf, int len) //获取一组数字输入/输出（DIO）通道的当前状态，并将其存储在一个缓冲区中
+U8 DIO::GetAll(U8 *buf, U8 len) // 获取一组数字输入/输出（DIO）通道的当前状态，并将其存储在一个缓冲区中
 {
-    if (len < DIO_BYTES)//检查传递给函数的缓冲区buf的长度len是否小于DIO通道的总字节数DIO_BYTES
-        return E_IO_BUF_LEN;//表示缓冲区长度不足以容纳所有DIO通道的状态
+    if (len < DIO_BYTES)     // 检查传递给函数的缓冲区buf的长度len是否小于DIO通道的总字节数DIO_BYTES
+        return E_IO_BUF_LEN; // 表示缓冲区长度不足以容纳所有DIO通道的状态
 
-    for (int i = 0; i < m_num; i++)
+    for (U8 i = 0; i < m_num; i++)
     {
-        set_bit(buf, i, Get(i));//调用Get(i)来获取第i个DIO通道的当前状态，并使用set_bit函数将该状态设置到缓冲区buf中的相应位置。
+        set_bit(buf, i, Get(i)); // 调用Get(i)来获取第i个DIO通道的当前状态，并使用set_bit函数将该状态设置到缓冲区buf中的相应位置。
     }
 
-    return DIO_BYTES;//成功操作并返回了DIO通道的总字节数
+    return DIO_BYTES; // 成功操作并返回了DIO通道的总字节数
 }
 
 // 根据重定位表
-int DIO::GetAllMap(U8 *buf, int len, U8 *map)
+U8 DIO::GetAllMap(U8 *buf, U8 len, U8 *map)
 {
     if (len < DIO_BYTES)
         return E_IO_BUF_LEN;
 
-    for (int i = 0; i < m_num; i++)
+    for (U8 i = 0; i < m_num; i++)
     {
         set_bit(buf, i, Get(map[i]));
     }
@@ -133,10 +125,9 @@ int DIO::GetAllMap(U8 *buf, int len, U8 *map)
 
 void DIO::dump()
 {
-    LOG_PRINT("DIO::dump()");
-    memdump(m_v, MAX_DIO_BYTES);
-    memdump(m_f, MAX_DIO_BYTES);
-    memdump(m_fv, MAX_DIO_BYTES);
+    memdump(m_value, MAX_DIO_BYTES);
+    memdump(m_force, MAX_DIO_BYTES);
+    memdump(m_force_value, MAX_DIO_BYTES);
 }
 
 // 全局变量定义

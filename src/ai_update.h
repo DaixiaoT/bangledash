@@ -5,14 +5,6 @@
 #include "filter.h"
 #include "ac_api.h"
 
-
 void ai_update();
 
-
-
-
-
-
-
-
-#endif//__AI_UDPATE_H__
+#endif //__AI_UDPATE_H__

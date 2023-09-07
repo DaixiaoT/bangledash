@@ -2,7 +2,7 @@
 #define _AC_API_H_
 #include "ac_include.h"
 #include "ac_ctrl.h"
-
+#include "LVF_HMI.h"
 
 void ac_init();
 
