@@ -4,7 +4,9 @@
 class ACControl
 {
 public:
-    BOOL m_set_temp; // 触摸屏设点温度开启
+    void ProcessMode(U32 run);
+    BOOL AdjustRunTimeInfo(BOOL force);
+    // BOOL m_set_temp; // 触摸屏设点温度开启
 };
 extern ACControl g_car;
 

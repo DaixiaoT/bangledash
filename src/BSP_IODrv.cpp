@@ -122,7 +122,7 @@ static U16 DI_Read_Verify(DIOInfo_t *pDio)
         // sleep(2);
     }
 
-    LOG_PRINT("DI_Read_Verify failed.\r\n");
+    // LOG_PRINT("DI_Read_Verify failed.\r\n");
     return 0;
 }
 static void DO_Write_Verify(DIOInfo_t *pDio)
@@ -139,7 +139,7 @@ static void DO_Write_Verify(DIOInfo_t *pDio)
         {
             return;
         }
-        LOG_PRINT("DO_Write_Verify failed addr:%x.[%04x] [%04x]\r\n", pDio->m_addr, v, pDio->m_io);
+        // LOG_PRINT("DO_Write_Verify failed addr:%x.[%04x] [%04x]\r\n", pDio->m_addr, v, pDio->m_io);
         // sleep(2);
     }
 }

@@ -3,7 +3,7 @@
 #include "ac_include.h"
 #include "ac_ctrl.h"
 #include "LVF_HMI.h"
-
+#include "MB85RS256B.h"
 void ac_init();
 
 void ac_set_ad(int ch, S16 ad);

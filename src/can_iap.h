@@ -47,7 +47,7 @@ static inline void LoopCheckIAPBus(U32 flag,U32 timeout)
 		if (TimeGap(time)>=2000)
 		{
 			time = sys_time();
-			LOG_PRINT("LoopCheckIAPBus %d\r\n",TimeGap(start_time));
+			// LOG_PRINT("LoopCheckIAPBus %d\r\n",TimeGap(start_time));
 		}
 	}
 }

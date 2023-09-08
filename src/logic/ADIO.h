@@ -33,6 +33,8 @@ public:
 
 #define DO_SET(n) g_DO.Set(n, 1)
 #define DO_CLR(n) g_DO.Set(n, 0)
+#define DI_STAT(n) g_DI.Get(n)
+
 
 extern DIO g_DI, g_DO, g_LED;
 #endif //_ADIO_H_
